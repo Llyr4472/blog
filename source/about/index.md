@@ -5,7 +5,7 @@ layout: about
 
 ### About me
 
-<div align=center><img src="../images/logo.png" width="160px" style="border-radius: 80px; padding: 5px; pointer-events:none"/></div>
+<div align=center><img src="../images/user.png" width="160px" style="border-radius: 80px; padding: 5px; pointer-events:none"/></div>
 
 <br/>
 
