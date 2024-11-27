@@ -174,10 +174,3 @@ This unit explains the C preprocessor, covering preprocessor directives such as 
 Compiled by ****, B.Sc. CSIT Faculty at Patan Multiple Campus.
 
 ---
-
-### Notes:
-1. **PDF Embeds**: Replace the `src` links with the actual file paths where your PDFs are hosted.
-2. **Tags and Categories**: Tags like "CSIT," "C Programming," and "Semester 1" ensure the content is easy to categorize in your Hexo blog.
-3. **Deployment**: After saving this file as `c-programming.md`, place it in your Hexo `source/_posts/` folder. Use Hexo commands to test and deploy.
-
-Let me know if you need help with further customization or if you'd like to make adjustments!
