@@ -15,5 +15,5 @@ layout: about
 </center>
 
 > Hello I\'m Prashant!
-> Blog is still under construction. Please be patient.
+> 🚧Site is still under construction. Please be patient.
 > 
