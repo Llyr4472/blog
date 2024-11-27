@@ -81,7 +81,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Memory hierarchy
   - Different storage devices and their functions
 
-**[Download Unit 3 PDF](pdfs/csit/sem-1/iit/unit3-computer-memory.pdf)**
+<!-- **[Download Unit 3 PDF](pdfs/csit/sem-1/iit/unit3-computer-memory.pdf)** -->
 
 ### Unit 4: Input and Output Devices
 - **Teaching Hours**: 4
@@ -91,7 +91,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Output devices: hard copy and soft copy
   - Working of the I/O system
 
-**[Download Unit 4 PDF](pdfs/csit/sem-1/iit/unit4-input-output-devices.pdf)**
+<!-- **[Download Unit 4 PDF](pdfs/csit/sem-1/iit/unit4-input-output-devices.pdf)** -->
 
 ### Unit 5: Data Representation
 - **Teaching Hours**: 6
@@ -101,7 +101,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Binary arithmetic, signed/unsigned numbers
   - Binary data representation and logic gates
 
-**[Download Unit 5 PDF](pdfs/csit/sem-1/iit/unit5-data-representation.pdf)**
+<!-- **[Download Unit 5 PDF](pdfs/csit/sem-1/iit/unit5-data-representation.pdf)** -->
 
 ### Unit 6: Computer Software
 - **Teaching Hours**: 6
@@ -110,7 +110,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - System software and application software
   - Introduction to operating systems and their functions
 
-**[Download Unit 6 PDF](pdfs/csit/sem-1/iit/unit6-computer-software.pdf)**
+<!-- **[Download Unit 6 PDF](pdfs/csit/sem-1/iit/unit6-computer-software.pdf)** -->
 
 ### Unit 7: Data Communication and Computer Networks
 - **Teaching Hours**: 5
@@ -119,7 +119,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Types of transmission media and network topologies
   - Communication protocols and networking devices
 
-**[Download Unit 7 PDF](pdfs/csit/sem-1/iit/unit7-data-communication-and-computer-networks.pdf)**
+<!-- **[Download Unit 7 PDF](pdfs/csit/sem-1/iit/unit7-data-communication-and-computer-networks.pdf)** -->
 
 ### Unit 8: The Internet and Internet Services
 - **Teaching Hours**: 4
@@ -129,7 +129,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Internet services like WWW, Email, and FTP
   - IoT, Cloud Computing, and e-commerce
 
-**[Download Unit 8 PDF](pdfs/csit/sem-1/iit/unit8-internet-and-internet-services.pdf)**
+<!-- **[Download Unit 8 PDF](pdfs/csit/sem-1/iit/unit8-internet-and-internet-services.pdf)** -->
 
 ### Unit 9: Fundamentals of Database
 - **Teaching Hours**: 4
@@ -138,7 +138,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Database models (E-R model and relational model)
   - DBMS concepts, data warehousing, and Big Data
 
-**[Download Unit 9 PDF](pdfs/csit/sem-1/iit/unit9-fundamentals-of-database.pdf)**
+<!-- **[Download Unit 9 PDF](pdfs/csit/sem-1/iit/unit9-fundamentals-of-database.pdf)** -->
 
 ### Unit 10: Multimedia
 - **Teaching Hours**: 3
@@ -146,7 +146,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Introduction to multimedia elements: text, graphics, audio, video, and animation
   - Applications of multimedia
 
-**[Download Unit 10 PDF](pdfs/csit/sem-1/iit/unit10-multimedia.pdf)**
+<!-- **[Download Unit 10 PDF](pdfs/csit/sem-1/iit/unit10-multimedia.pdf)** -->
 
 ### Unit 11: Computer Security
 - **Teaching Hours**: 3
@@ -155,7 +155,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Cryptography, digital signatures, firewalls
   - User authentication and intrusion detection systems
 
-**[Download Unit 11 PDF](pdfs/csit/sem-1/iit/unit11-computer-security.pdf)**
+<!-- **[Download Unit 11 PDF](pdfs/csit/sem-1/iit/unit11-computer-security.pdf)** -->
 
 ---
 

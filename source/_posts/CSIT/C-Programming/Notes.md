@@ -41,6 +41,7 @@ In **[Elements of C](/downloads/CSIT/Sem1/CProgramming/Unit-2.pdf)**, we explore
 
 **Description**:  
 This unit covers the basic elements of the C programming language, including data types, variables, constants, operators, and expressions. It also introduces the concept of functions and how to declare and define them.
+
 ---
 
 ## Unit 3: Input/Output
