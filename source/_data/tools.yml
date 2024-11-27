@@ -3,5 +3,10 @@
 - name: Chatgpt
   link: https://chat.openai.com
   description: ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.
-  icon: /images/tools/chatgpt.png
+  icon: "/images/tools/openai.png"
+
+- name: Desmos
+  link: https://www.desmos.com
+  description: Desmos is a digital calculator tool that allows users to create graphs, tables, and more.
+  icon: "/images/tools/desmos.jpg"
 
