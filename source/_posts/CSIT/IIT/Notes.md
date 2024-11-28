@@ -44,10 +44,10 @@ This unit dives deep into the essential components of computer hardware such as 
 ---
 
 ## Unit 3: Computer Memory
-In **Unit 3: Computer Memory**, we cover the different types of memory used in computers. You can view the full PDF below:
+In [The Computer System Hardware](/downloads/CSIT/Sem1/IIT/Unit-3.pdf), we cover the different types of memory used in computers. You can view the full PDF below:
 
 <iframe 
-    src="Unit-3.pdf" 
+    src="/downloads/CSIT/Sem1/IIT/Unit-3.pdf" 
     width="100%" 
     height="600px">
 </iframe>
