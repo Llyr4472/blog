@@ -29,6 +29,7 @@ This assignment explores the fundamental differences between RISC and CISC archi
 
 ## Download Resources
 - [Download Assignment PDF](/downloads/CSIT/Sem1/IIT/risc-vs-cisc.pdf)
+- [Claude](https://claude.site/artifacts/08e21e85-31da-41d6-bb21-d4357182afb9) (totally unrelated)
 
 ## Key Points Covered
 - Historical development of RISC and CISC
@@ -37,4 +38,3 @@ This assignment explores the fundamental differences between RISC and CISC archi
 - Modern implementations
 - Future trends
 
-Feel free to use these resources for your studies. Don't forget to cite appropriately if you're using this material for academic purposes.
