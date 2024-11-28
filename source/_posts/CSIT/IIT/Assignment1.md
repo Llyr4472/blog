@@ -78,3 +78,4 @@ CISC is a CPU design architecture that implements a large set of complex instruc
     </iframe>
 
 [Download PDF](/downloads/CSIT/Sem1/IIT/risc-vs-cisc.pdf)
+[Cover Page](/downloads/CSIT/Sem1/IIT/coverpage.pdf)
