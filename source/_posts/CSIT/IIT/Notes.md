@@ -1,15 +1,13 @@
 ---
 title: IIT Notes - CSIT Semester 1
-date: 2024-11-27
+date: 2024-11-28
 description: Study materials and notes compiled by SKM for Introduction to Information Technology.
 tags:
-  - CSIT
-  - Semester 1
-  - SKM
+  - IIT
   - Notes
+  - Slides
 
 categories:
-  - Study Materials
   - CSIT
   - Semester 1
 ---
@@ -45,7 +43,7 @@ This unit dives deep into the essential components of computer hardware such as 
 
 ---
 
-<!-- ## Unit 3: Computer Memory
+## Unit 3: Computer Memory
 In **Unit 3: Computer Memory**, we cover the different types of memory used in computers. You can view the full PDF below:
 
 <iframe 
@@ -59,6 +57,7 @@ Memory is a critical component in a computer system. This unit focuses on the di
 
 ---
 
+<!---
 ## Unit 4: Input and Output Devices
 **Unit 4: Input and Output Devices** explains the devices used for input and output in a computer system. You can view the full PDF below:
 
