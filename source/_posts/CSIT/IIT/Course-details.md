@@ -81,7 +81,7 @@ The main objective is to provide students with fundamental knowledge of computer
   - Memory hierarchy
   - Different storage devices and their functions
 
-<!-- **[Download Unit 3 PDF](pdfs/csit/sem-1/iit/unit3-computer-memory.pdf)** -->
+**[Download Unit 3 PDF](/downloads/CSIT/Sem1/IIT/Unit-3.pdf)**
 
 ### Unit 4: Input and Output Devices
 - **Teaching Hours**: 4
