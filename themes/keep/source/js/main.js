@@ -1,9 +1,3 @@
-/* global KEEP */
-import { inject } from "@vercel/analytics"
-
-// inject analytics
-inject()
-
 window.addEventListener('DOMContentLoaded', () => {
   const { version, local_search, lazyload } = KEEP.theme_config
 
