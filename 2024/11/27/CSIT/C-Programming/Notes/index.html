@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Study materials and notes compiled for C Programming (CSIT Semester 1).">
+    <meta name="author" content="Llyr">
+    <script defer src="/_vercel/insights/script.js"></script>
+    
+    <title>
+        
+            C Programming Notes - CSIT Semester 1 |
+        
+        CSIT 101
+    </title>
+    
+<link rel="stylesheet" href="../../../../../../css/style.css">
+
+    
+        <link rel="shortcut icon" href="../../../../../../images/logo.png">
+    
+    
+<link rel="stylesheet" href="font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="../../../../../../css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"csit101.netlify.app","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#a67eb7","title":"CSIT 101","author":"Llyr","avatar":"/images/user.png","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","tools":"/tools || fa-solid fa-tools","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":null,"background_img_dark":null,"description":"Notes for you, by us! :D","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/Llyr4472","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"contact@prashantgiri360.com.np","bilibili":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":false,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD","copyright_info":true,"share":false,"reward":{"enable":true,"img_link":null,"text":null,"icon":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2024,"word_count":true,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom-1.css"],"js":[null]},"root":"","source_data":{"tools":[{"category":"Tools","anchorId":"VG9vbHM0"},{"name":"Chatgpt","link":"https://chat.openai.com","description":"ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.","icon":"/images/tools/openai.png"},{"name":"Desmos","link":"https://www.desmos.com","description":"Desmos is a digital calculator tool that allows users to create graphs, tables, and more.","icon":"/images/tools/desmos.jpg"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="../../../../../../index.html">
+                    <img src="../../../../../../images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="../../../../../../index.html">
+               CSIT 101
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../index.html">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../tools">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tools"></i>
+                                
+                                TOOLS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../index.html">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../tools">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tools"></i>
+                                </span>
+                            
+                            TOOLS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        C Programming Notes - CSIT Semester 1
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="../../../../../../images/user.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Llyr</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-11-27</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Sun Dec 01 2024 20:53:54 GMT+0545">2024-12-01</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="../../../../../../categories/Study-Materials/">Study Materials</a></li>
+                        
+                    
+                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="../../../../../../categories/Study-Materials/CSIT/">CSIT</a></li>
+                        
+                    
+                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="../../../../../../categories/Study-Materials/CSIT/Semester-1/">Semester 1</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/CSIT/">CSIT</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/Semester-1/">Semester 1</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/C-Programming/">C Programming</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/Notes/">Notes</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="C-Programming-CSIT-Semester-1"><a href="#C-Programming-CSIT-Semester-1" class="headerlink" title="C Programming - CSIT Semester 1"></a>C Programming - CSIT Semester 1</h1><h2 id="Unit-1-Problem-Solving-with-Computer"><a href="#Unit-1-Problem-Solving-with-Computer" class="headerlink" title="Unit 1: Problem Solving with Computer"></a>Unit 1: Problem Solving with Computer</h2><p>Here are the notes for <strong><a href="/downloads/CSIT/Sem1/CProgramming/Unit-1.pdf">Problem Solving with Computer</a></strong>, which covers the basics of programming and problem-solving using computers. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-1.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>This unit introduces the basics of programming, including the problem-solving process, the role of computers in problem-solving, and the importance of algorithms and pseudocode in programming. It also covers the C programming language and its syntax.</p>
+<hr>
+<h2 id="Unit-2-Elements-of-C"><a href="#Unit-2-Elements-of-C" class="headerlink" title="Unit 2: Elements of C"></a>Unit 2: Elements of C</h2><p>In <strong><a href="/downloads/CSIT/Sem1/CProgramming/Unit-2.pdf">Elements of C</a></strong>, we explore the fundamental elements of the C programming language. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-2.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>This unit covers the basic elements of the C programming language, including data types, variables, constants, operators, and expressions. It also introduces the concept of functions and how to declare and define them.</p>
+<hr>
+<h2 id="Unit-3-Input-Output"><a href="#Unit-3-Input-Output" class="headerlink" title="Unit 3: Input&#x2F;Output"></a>Unit 3: Input&#x2F;Output</h2><p>In <strong><a href="/downloads/CSIT/Sem1/CProgramming/Unit-3.pdf">Input&#x2F;Output</a></strong>, we dive into input and output operations in C. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-3.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>This unit covers input and output operations in C programming. It explains how to use <code>scanf()</code> and <code>printf()</code> functions for input and output, as well as the <code>getchar()</code> and <code>putchar()</code> functions for character input and output.</p>
+<hr>
+<h2 id="Unit-4-Operators-and-expressions"><a href="#Unit-4-Operators-and-expressions" class="headerlink" title="Unit 4: Operators and expressions"></a>Unit 4: Operators and expressions</h2><p><strong><a href="%22/downloads/CSIT/Sem1/CProgramming/Unit-4.pdf%22">Operators and expressions</a></strong> explains how to use operators and expressions in C programming. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-4.pdf"
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>This unit covers operators and expressions in C programming. It explains how to use operators for arithmetic, relational, logical, and bitwise operations. It also covers expressions and how to evaluate them.</p>
+<hr>
+<!--
+## Unit 5: Arrays
+**[Arrays](/downloads/CSIT/Sem1/CProgramming/Unit-5.pdf)** covers the basics of arrays in C, how to define and manipulate them. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-5.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit explains arrays in C, both single-dimensional and multi-dimensional. It covers declaring arrays, accessing array elements, and performing operations on arrays such as sorting and searching.
+
+---
+
+## Unit 6: Strings
+**[Strings](/downloads/CSIT/Sem1/CProgramming/Unit-6.pdf)** explains string manipulation in C, including string operations and functions. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-6.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit covers strings in C, explaining how strings are represented in memory and how to perform common string operations like concatenation, comparison, and finding the length of strings.
+
+---
+
+## Unit 7: Pointers
+**[Pointers](/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf)** explores the concept of pointers, their syntax, and applications in C programming. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit explains pointers in C, including how to declare pointers, use pointer arithmetic, and pass pointers to functions. It also covers dynamic memory allocation using `malloc()` and `free()`.
+
+---
+
+## Unit 8: Structures and Unions
+**[Structures and Unions](/downloads/CSIT/Sem1/CProgramming/Unit-8.pdf)** introduces the concept of structures and unions in C programming. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-8.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit introduces structures and unions in C, explaining how they are used to group different data types. It covers the syntax and uses of structures and unions for organizing data in complex programs.
+
+---
+
+## Unit 9: File Handling
+**[File Handling](/downloads/CSIT/Sem1/CProgramming/Unit-9.pdf)** covers how to work with files in C programming. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-9.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit introduces file handling in C, covering how to open, read, write, and close files using file pointers. It includes operations like text file handling and binary file handling.
+
+---
+
+## Unit 10: Dynamic Memory Allocation
+**[Dynamic Memory Allocation](/downloads/CSIT/Sem1/CProgramming/Unit-10.pdf)** explains memory management in C using functions like `malloc()`, `calloc()`, `realloc()`, and `free()`. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-10.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit covers dynamic memory allocation in C. It explains how to allocate and deallocate memory during runtime using various memory management functions. Topics also include managing memory in complex data structures like linked lists.
+
+---
+
+## Unit 11: C Preprocessor
+**[C Preprocessor](/downloads/CSIT/Sem1/CProgramming/Unit-11.pdf)** introduces preprocessor directives in C, such as `#define`, `#include`, and `#ifdef`. You can view the full PDF below:
+
+<iframe 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-11.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit explains the C preprocessor, covering preprocessor directives such as macros, conditional compilation, and file inclusion. It focuses on how the preprocessor modifies the code before compilation.
+-->
+<hr>
+<h3 id="About-the-Author"><a href="#About-the-Author" class="headerlink" title="About the Author"></a>About the Author</h3><p>Compiled by Hemanta GC, B.Sc. CSIT Faculty at Patan Multiple Campus.</p>
+<hr>
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                C Programming Notes - CSIT Semester 1
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/11/27/CSIT/C-Programming/Notes/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Llyr</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-11-27 00:00</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/CSIT/">CSIT</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/Semester-1/">Semester 1</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/C-Programming/">C Programming</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/Notes/">Notes</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="../../IIT/Book/"
+                                   title="Computer Fundamentals - Book by Anita Goel"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Computer Fundamentals - Book by Anita Goel</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="../../IIT/Course-details/"
+                                   title="Course Details - IIT Sem 1 (CSC109)"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Course Details - IIT Sem 1 (CSC109)</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-Programming-CSIT-Semester-1"><span class="nav-text">C Programming - CSIT Semester 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-1-Problem-Solving-with-Computer"><span class="nav-text">Unit 1: Problem Solving with Computer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-2-Elements-of-C"><span class="nav-text">Unit 2: Elements of C</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-3-Input-Output"><span class="nav-text">Unit 3: Input&#x2F;Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-4-Operators-and-expressions"><span class="nav-text">Unit 4: Operators and expressions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#About-the-Author"><span class="nav-text">About the Author</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2024
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="../../../../../../index.html">Llyr</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            This site is deployed on <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="../../../../../../images/brands/github.png"></span>
+            
+        </div>
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-Programming-CSIT-Semester-1"><span class="nav-text">C Programming - CSIT Semester 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-1-Problem-Solving-with-Computer"><span class="nav-text">Unit 1: Problem Solving with Computer</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-2-Elements-of-C"><span class="nav-text">Unit 2: Elements of C</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-3-Input-Output"><span class="nav-text">Unit 3: Input&#x2F;Output</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-4-Operators-and-expressions"><span class="nav-text">Unit 4: Operators and expressions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#About-the-Author"><span class="nav-text">About the Author</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="js/utils.js"></script>
+
+<script src="js/header-shrink.js"></script>
+
+<script src="js/back2top.js"></script>
+
+<script src="js/toggle-theme.js"></script>
+
+<script src="js/code-block.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>

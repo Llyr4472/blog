@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Study materials and notes compiled by SKM for Introduction to Information Technology.">
+    <meta name="author" content="Llyr">
+    <script defer src="/_vercel/insights/script.js"></script>
+    
+    <title>
+        
+            IIT Notes - CSIT Semester 1 |
+        
+        CSIT 101
+    </title>
+    
+<link rel="stylesheet" href="../../../../../../css/style.css">
+
+    
+        <link rel="shortcut icon" href="../../../../../../images/logo.png">
+    
+    
+<link rel="stylesheet" href="font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="../../../../../../css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"csit101.netlify.app","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#a67eb7","title":"CSIT 101","author":"Llyr","avatar":"/images/user.png","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","tools":"/tools || fa-solid fa-tools","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":null,"background_img_dark":null,"description":"Notes for you, by us! :D","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/Llyr4472","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"contact@prashantgiri360.com.np","bilibili":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":false,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD","copyright_info":true,"share":false,"reward":{"enable":true,"img_link":null,"text":null,"icon":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2024,"word_count":true,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom-1.css"],"js":[null]},"root":"","source_data":{"tools":[{"category":"Tools","anchorId":"VG9vbHM0"},{"name":"Chatgpt","link":"https://chat.openai.com","description":"ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.","icon":"/images/tools/openai.png"},{"name":"Desmos","link":"https://www.desmos.com","description":"Desmos is a digital calculator tool that allows users to create graphs, tables, and more.","icon":"/images/tools/desmos.jpg"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="../../../../../../index.html">
+                    <img src="../../../../../../images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="../../../../../../index.html">
+               CSIT 101
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../index.html">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../tools">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tools"></i>
+                                
+                                TOOLS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="../../../../../../about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../index.html">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../tools">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tools"></i>
+                                </span>
+                            
+                            TOOLS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        IIT Notes - CSIT Semester 1
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="../../../../../../images/user.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Llyr</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-12-01</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Sun Dec 01 2024 20:51:14 GMT+0545">2024-12-01</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="../../../../../../categories/CSIT/">CSIT</a></li>
+                        
+                    
+                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="../../../../../../categories/CSIT/Semester-1/">Semester 1</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/IIT/">IIT</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/Notes/">Notes</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/Slides/">Slides</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="SKM-Subject-Study-Materials-IIT-Semester-1"><a href="#SKM-Subject-Study-Materials-IIT-Semester-1" class="headerlink" title="SKM Subject Study Materials - IIT Semester 1"></a>SKM Subject Study Materials - IIT Semester 1</h1><h2 id="Unit-1-Introduction-to-Computers"><a href="#Unit-1-Introduction-to-Computers" class="headerlink" title="Unit 1: Introduction to Computers"></a>Unit 1: Introduction to Computers</h2><p>Here are the notes for <strong><a href="/downloads/CSIT/Sem1/IIT/Unit-1.pdf">Introduction to Computers</a></strong>, which covers the basics of computer science, including the history, characteristics, and classifications of computers. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/IIT/Unit-1.pdf"
+    width="100%" 
+    height="600px">
+</iframe>
+
+
+<p><strong>Description</strong>:<br>This unit introduces the concept of computers, covering their basic definition, history, and evolution over time. It also discusses the different generations of computers and how they are classified based on size, capacity, and applications.</p>
+<hr>
+<h2 id="Unit-2-The-Computer-System-Hardware"><a href="#Unit-2-The-Computer-System-Hardware" class="headerlink" title="Unit 2: The Computer System Hardware"></a>Unit 2: The Computer System Hardware</h2><p>In <strong><a href="/downloads/CSIT/Sem1/IIT/Unit-2.pdf">The Computer System Hardware</a></strong>, we explore the internal hardware components of a computer system. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/IIT/Unit-2.pdf"
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>This unit dives deep into the essential components of computer hardware such as the CPU, memory, storage devices, and input&#x2F;output devices. It explains the functions of each hardware component and how they work together in a computer system.</p>
+<hr>
+<h2 id="Unit-3-Computer-Memory"><a href="#Unit-3-Computer-Memory" class="headerlink" title="Unit 3: Computer Memory"></a>Unit 3: Computer Memory</h2><p>In <a href="/downloads/CSIT/Sem1/IIT/Unit-3.pdf">The Computer System Hardware</a>, we cover the different types of memory used in computers. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/IIT/Unit-3.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>Memory is a critical component in a computer system. This unit focuses on the different types of memory, including primary memory (RAM), secondary memory (hard drives, SSDs), and cache memory. It explains how each type of memory works and their roles in a computer system.</p>
+<hr>
+<h2 id="Unit-4-Input-and-Output-Devices"><a href="#Unit-4-Input-and-Output-Devices" class="headerlink" title="Unit 4: Input and Output Devices"></a>Unit 4: Input and Output Devices</h2><p>In <a href="/downloads/CSIT/Sem1/IIT/Unit-4.pdf">Input and Output Devices</a>, we explore the various input and output devices used in computers. You can view the full PDF below:</p>
+<iframe 
+    src="/downloads/CSIT/Sem1/IIT/Unit-4.pdf"
+    width="100%" 
+    height="600px">
+</iframe>
+
+<p><strong>Description</strong>:<br>This unit covers all major input and output devices used in computers, including keyboards, mice, monitors, printers, and scanners. It discusses how each device communicates with the computer system and its role in data processing.</p>
+<hr>
+<!---
+## Unit 5: Data Representation
+**Unit 5: Data Representation** explores how data is represented inside a computer system. You can view the full PDF below:
+
+<iframe 
+    src="Unit-5.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit focuses on how data is represented in binary form within a computer system. It explains concepts like binary numbers, ASCII encoding, and how computers process different types of data such as text, images, and audio.
+
+---
+
+## Unit 6: Computer Software
+**Unit 6: Computer Software** introduces the different types of software that make computers functional. You can view the full PDF below:
+
+<iframe 
+    src="Unit-6.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit covers the two main types of computer software: system software (like operating systems) and application software (like word processors, browsers, and games). It explains the role of software in making hardware usable and facilitating user tasks.
+
+---
+
+## Unit 7: Data Communication and Computer Networks
+**Unit 7: Data Communication and Computer Networks** covers the fundamentals of data transmission and networking. You can view the full PDF below:
+
+<iframe 
+    src="Unit-7.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit explains how data is transmitted over communication channels and how networks are set up. It discusses network topologies, protocols, and types of networks such as LAN, WAN, and the internet.
+
+---
+
+## Unit 8: The Internet and Internet Services
+**Unit 8: The Internet and Internet Services** explores how the internet functions and the different services available online. You can view the full PDF below:
+
+<iframe 
+    src="Unit-8.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+In this unit, we explore the working of the internet, web technologies, and internet services like email, VoIP, and cloud computing. It also covers concepts such as IP addresses, DNS, and HTTP.
+
+---
+
+## Unit 9: Fundamentals of Databases
+**Unit 9: Fundamentals of Databases** introduces the concepts of database management systems. You can view the full PDF below:
+
+<iframe 
+    src="Unit-9.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit covers the basics of database systems, including relational databases, SQL, and data models. It explains how databases are used to store, manage, and retrieve data efficiently.
+
+---
+
+## Unit 10: Multimedia
+**Unit 10: Multimedia** discusses how multimedia technologies work, from audio and video to graphics and animations. You can view the full PDF below:
+
+<iframe 
+    src="Unit-10.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit explains multimedia content and how it is used in computing. It covers digital images, sound, and video, and introduces multimedia software and technologies like video editing and streaming.
+
+---
+
+## Unit 11: Computer Security
+**Unit 11: Computer Security** introduces the principles of securing computer systems. You can view the full PDF below:
+
+<iframe 
+    src="Unit-11.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit discusses the importance of computer security, including topics such as encryption, firewalls, antivirus software, and secure computing practices. It also covers common threats like malware and phishing.
+
+--- -->
+
+<h3 id="About-the-Author"><a href="#About-the-Author" class="headerlink" title="About the Author"></a>About the Author</h3><p>Compiled by <strong>Shiv Kumar Mahato</strong>, B.Sc. CSIT Faculty at Patan Multiple Campus.</p>
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                IIT Notes - CSIT Semester 1
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                2024/12/01/CSIT/IIT/Notes/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Llyr</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-12-01 00:00</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/IIT/">IIT</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/Notes/">Notes</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/Slides/">Slides</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="../../Digital-Logic/Notes/"
+                                   title="Digital Logic Notes - CSIT Semester 1"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Digital Logic Notes - CSIT Semester 1</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SKM-Subject-Study-Materials-IIT-Semester-1"><span class="nav-text">SKM Subject Study Materials - IIT Semester 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-1-Introduction-to-Computers"><span class="nav-text">Unit 1: Introduction to Computers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-2-The-Computer-System-Hardware"><span class="nav-text">Unit 2: The Computer System Hardware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-3-Computer-Memory"><span class="nav-text">Unit 3: Computer Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-4-Input-and-Output-Devices"><span class="nav-text">Unit 4: Input and Output Devices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#About-the-Author"><span class="nav-text">About the Author</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2024
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="../../../../../../index.html">Llyr</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            This site is deployed on <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="../../../../../../images/brands/github.png"></span>
+            
+        </div>
+    
+
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SKM-Subject-Study-Materials-IIT-Semester-1"><span class="nav-text">SKM Subject Study Materials - IIT Semester 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-1-Introduction-to-Computers"><span class="nav-text">Unit 1: Introduction to Computers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-2-The-Computer-System-Hardware"><span class="nav-text">Unit 2: The Computer System Hardware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-3-Computer-Memory"><span class="nav-text">Unit 3: Computer Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-4-Input-and-Output-Devices"><span class="nav-text">Unit 4: Input and Output Devices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#About-the-Author"><span class="nav-text">About the Author</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="js/utils.js"></script>
+
+<script src="js/header-shrink.js"></script>
+
+<script src="js/back2top.js"></script>
+
+<script src="js/toggle-theme.js"></script>
+
+<script src="js/code-block.js"></script>
+
+<script src="js/main.js"></script>
+
+<script src="js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+    
+        
+    
+
+</body>
+</html>
