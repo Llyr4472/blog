@@ -57,21 +57,21 @@ In **[Input/Output](/downloads/CSIT/Sem1/CProgramming/Unit-3.pdf)**, we dive int
 This unit covers input and output operations in C programming. It explains how to use `scanf()` and `printf()` functions for input and output, as well as the `getchar()` and `putchar()` functions for character input and output.
 
 ---
-<!-- 
-## Unit 4: Functions
-**[Functions](/downloads/CSIT/Sem1/CProgramming/Unit-4.pdf)** explains how to declare, define, and call functions in C. You can view the full PDF below:
+## Unit 4: Operators and expressions
+**[Operators and expressions]("/downloads/CSIT/Sem1/CProgramming/Unit-4.pdf")** explains how to use operators and expressions in C programming. You can view the full PDF below:
 
 <iframe 
-    src="/downloads/CSIT/Sem1/CProgramming/Unit-4.pdf" 
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-4.pdf"
     width="100%" 
     height="600px">
 </iframe>
 
 **Description**:  
-This unit focuses on functions in C programming. It covers function declaration, definition, and calling, along with function arguments and return values. Topics also include recursion and scope of variables.
+This unit covers operators and expressions in C programming. It explains how to use operators for arithmetic, relational, logical, and bitwise operations. It also covers expressions and how to evaluate them.
 
 ---
 
+<!--
 ## Unit 5: Arrays
 **[Arrays](/downloads/CSIT/Sem1/CProgramming/Unit-5.pdf)** covers the basics of arrays in C, how to define and manipulate them. You can view the full PDF below:
 
@@ -163,14 +163,14 @@ This unit covers dynamic memory allocation in C. It explains how to allocate and
     src="/downloads/CSIT/Sem1/CProgramming/Unit-11.pdf" 
     width="100%" 
     height="600px">
-</iframe> -->
+</iframe>
 
 **Description**:  
 This unit explains the C preprocessor, covering preprocessor directives such as macros, conditional compilation, and file inclusion. It focuses on how the preprocessor modifies the code before compilation.
-
+-->
 ---
 
 ### About the Author
-Compiled by ****, B.Sc. CSIT Faculty at Patan Multiple Campus.
+Compiled by Hemanta GC, B.Sc. CSIT Faculty at Patan Multiple Campus.
 
 ---
