@@ -57,12 +57,11 @@ Memory is a critical component in a computer system. This unit focuses on the di
 
 ---
 
-<!---
-## Unit 4: Input and Output Devices
-**Unit 4: Input and Output Devices** explains the devices used for input and output in a computer system. You can view the full PDF below:
 
+## Unit 4: Input and Output Devices
+In [Input and Output Devices](/downloads/CSIT/Sem1/IIT/Unit-4.pdf), we explore the various input and output devices used in computers. You can view the full PDF below:
 <iframe 
-    src="Unit-4.pdf" 
+    src="/downloads/CSIT/Sem1/IIT/Unit-4.pdf"
     width="100%" 
     height="600px">
 </iframe>
@@ -71,7 +70,7 @@ Memory is a critical component in a computer system. This unit focuses on the di
 This unit covers all major input and output devices used in computers, including keyboards, mice, monitors, printers, and scanners. It discusses how each device communicates with the computer system and its role in data processing.
 
 ---
-
+<!---
 ## Unit 5: Data Representation
 **Unit 5: Data Representation** explores how data is represented inside a computer system. You can view the full PDF below:
 
