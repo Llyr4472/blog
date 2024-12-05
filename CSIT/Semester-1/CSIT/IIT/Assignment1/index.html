@@ -4,33 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="Hexo Theme Keep">
-    <meta name="description" content="Study materials and notes compiled by SKM for Introduction to Information Technology.">
+    <meta name="description" content="Detailed comparison of RISC and CISC architectures">
     <meta name="author" content="Llyr">
     <script defer src="/_vercel/insights/script.js"></script>
     
     <title>
         
-            IIT Notes - CSIT Semester 1 |
+            RISC vs CISC : IIT Sem1 Assignment |
         
         CSIT 101
     </title>
     
-<link rel="stylesheet" href="../../../../../../css/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
     
-        <link rel="shortcut icon" href="../../../../../../images/logo.png">
+        <link rel="shortcut icon" href="/images/logo.png">
     
     
-<link rel="stylesheet" href="font/css/fontawesome.min.css">
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
 
     
-<link rel="stylesheet" href="font/css/regular.min.css">
+<link rel="stylesheet" href="/font/css/regular.min.css">
 
     
-<link rel="stylesheet" href="font/css/solid.min.css">
+<link rel="stylesheet" href="/font/css/solid.min.css">
 
     
-<link rel="stylesheet" href="font/css/brands.min.css">
+<link rel="stylesheet" href="/font/css/brands.min.css">
 
     
         
@@ -38,7 +38,7 @@
         
             
                 
-<link rel="stylesheet" href="../../../../../../css/custom-1.css">
+<link rel="stylesheet" href="/css/custom-1.css">
 
             
         
@@ -46,7 +46,7 @@
     <script class="keep-theme-configurations">
     const KEEP = window.KEEP || {}
     KEEP.hexo_config = {"hostname":"csit101.netlify.app","root":"/","language":"en","path":"search.json"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#a67eb7","title":"CSIT 101","author":"Llyr","avatar":"/images/user.png","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","tools":"/tools || fa-solid fa-tools","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":null,"background_img_dark":null,"description":"Notes for you, by us! :D","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/Llyr4472","weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"contact@prashantgiri360.com.np","bilibili":null}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":false,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD","copyright_info":true,"share":false,"reward":{"enable":true,"img_link":null,"text":null,"icon":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2024,"word_count":true,"site_deploy":{"enable":true,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom-1.css"],"js":[null]},"root":"","source_data":{"tools":[{"category":"Tools","anchorId":"VG9vbHM0"},{"name":"Chatgpt","link":"https://chat.openai.com","description":"ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.","icon":"/images/tools/openai.png"},{"name":"Desmos","link":"https://www.desmos.com","description":"Desmos is a digital calculator tool that allows users to create graphs, tables, and more.","icon":"/images/tools/desmos.jpg"}]},"version":"4.2.5"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#a67eb7","title":"CSIT 101","author":"Llyr","avatar":"/images/user.png","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","tools":"/tools || fa-solid fa-tools","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":null,"background_img_dark":null,"description":"Notes for you, by us! :D","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/Llyr4472","bilibili":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"contact@prashantgiri360.com.np"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD","copyright_info":true,"share":false,"reward":{"enable":false,"img_link":null,"text":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":true,"site_deploy":{"enable":true,"provider":"netlify","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom-1.css"],"js":[null]},"root":"","source_data":{"tools":[{"category":"Tools","anchorId":"VG9vbHM0"},{"name":"Chatgpt","link":"https://chat.openai.com","description":"ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.","icon":"/images/tools/openai.png"},{"name":"Desmos","link":"https://www.desmos.com","description":"Desmos is a digital calculator tool that allows users to create graphs, tables, and more.","icon":"/images/tools/desmos.jpg"}]},"version":"4.2.5"}
     KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
     KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
     KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
@@ -60,6 +60,9 @@
         <span class="scroll-progress-bar"></span>
     
 
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
     
 </div>
 
@@ -78,11 +81,11 @@
     <div class="border-box header-content">
         <div class="left flex-start border-box">
             
-                <a class="logo-image border-box" href="../../../../../../index.html">
-                    <img src="../../../../../../images/logo.png">
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.png">
                 </a>
             
-            <a class="site-name border-box" href="../../../../../../index.html">
+            <a class="site-name border-box" href="/">
                CSIT 101
             </a>
         </div>
@@ -93,7 +96,7 @@
                     
                         
                         <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="../../../../../../index.html">
+                            <a class="menu-text-color border-box" href="/">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-home"></i>
                                 
@@ -105,7 +108,7 @@
                     
                         
                         <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="../../../../../../archives">
+                            <a class="menu-text-color border-box" href="/archives">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
                                 
@@ -117,7 +120,7 @@
                     
                         
                         <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="../../../../../../tags">
+                            <a class="menu-text-color border-box" href="/tags">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
                                 
@@ -129,7 +132,7 @@
                     
                         
                         <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="../../../../../../categories">
+                            <a class="menu-text-color border-box" href="/categories">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
                                 
@@ -141,7 +144,7 @@
                     
                         
                         <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="../../../../../../tools">
+                            <a class="menu-text-color border-box" href="/tools">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-tools"></i>
                                 
@@ -153,7 +156,7 @@
                     
                         
                         <li class="menu-item flex-start border-box">
-                            <a class="menu-text-color border-box" href="../../../../../../about">
+                            <a class="menu-text-color border-box" href="/about">
                                 
                                     <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
                                 
@@ -187,7 +190,7 @@
                 
                 <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../index.html">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
                             
                                 <span class="menu-icon-wrap border-box flex-center">
                                     <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
@@ -203,7 +206,7 @@
                 
                 <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../archives">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
                             
                                 <span class="menu-icon-wrap border-box flex-center">
                                     <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
@@ -219,7 +222,7 @@
                 
                 <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../tags">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
                             
                                 <span class="menu-icon-wrap border-box flex-center">
                                     <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
@@ -235,7 +238,7 @@
                 
                 <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../categories">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
                             
                                 <span class="menu-icon-wrap border-box flex-center">
                                     <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
@@ -251,7 +254,7 @@
                 
                 <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../tools">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
                             
                                 <span class="menu-icon-wrap border-box flex-center">
                                     <i class="drawer-menu-text-color menu-icon fa-solid fa-tools"></i>
@@ -267,7 +270,7 @@
                 
                 <li class="drawer-menu-item border-box not-sub-menu">
                     <label class="drawer-menu-label border-box">
-                        <a class="drawer-menu-text-color left-side flex-start border-box" href="../../../../../../about">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
                             
                                 <span class="menu-icon-wrap border-box flex-center">
                                     <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
@@ -304,7 +307,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        IIT Notes - CSIT Semester 1
+                        RISC vs CISC : IIT Sem1 Assignment
                     </div>
                 
 
@@ -312,7 +315,7 @@
                     <div class="post-header border-box">
                         
                             <div class="avatar-box border-box">
-                                <img src="../../../../../../images/user.png">
+                                <img src="/images/user.png">
                             </div>
                         
                         <div class="info-box">
@@ -330,13 +333,13 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-12-01</span>
+                <span class="datetime">2024-11-28</span>
             </span>
 
             
                 <span class="meta-info-item post-update-date">
                     <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                    <span class="datetime" data-updated="Sun Dec 01 2024 20:51:14 GMT+0545">2024-12-01</span>
+                    <span class="datetime" data-updated="Thu Nov 28 2024 16:58:32 GMT+0545">2024-11-28</span>
                 </span>
             
         
@@ -345,10 +348,10 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="../../../../../../categories/CSIT/">CSIT</a></li>
+                            <li class="category-item"><a href="/categories/CSIT/">CSIT</a></li>
                         
                     
-                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="../../../../../../categories/CSIT/Semester-1/">Semester 1</a></li>
+                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="/categories/CSIT/Semester-1/">Semester 1</a></li>
                         
                     
                 </ul>
@@ -359,13 +362,10 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/IIT/">IIT</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Assignment/">Assignment</a></li>
                         
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/Notes/">Notes</a></li>
-                        
-                    
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="../../../../../../tags/Slides/">Slides</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/IIT/">IIT</a></li>
                         
                     
                 </ul>
@@ -375,6 +375,10 @@
         
         
         
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
         
     </div>
 
@@ -390,143 +394,62 @@
                     
 
                     
-                         <h1 id="SKM-Subject-Study-Materials-IIT-Semester-1"><a href="#SKM-Subject-Study-Materials-IIT-Semester-1" class="headerlink" title="SKM Subject Study Materials - IIT Semester 1"></a>SKM Subject Study Materials - IIT Semester 1</h1><h2 id="Unit-1-Introduction-to-Computers"><a href="#Unit-1-Introduction-to-Computers" class="headerlink" title="Unit 1: Introduction to Computers"></a>Unit 1: Introduction to Computers</h2><p>Here are the notes for <strong><a href="/downloads/CSIT/Sem1/IIT/Unit-1.pdf">Introduction to Computers</a></strong>, which covers the basics of computer science, including the history, characteristics, and classifications of computers. You can view the full PDF below:</p>
-<iframe 
-    src="/downloads/CSIT/Sem1/IIT/Unit-1.pdf"
-    width="100%" 
+                         <h1 id="RISC-vs-CISC-An-IIT-Assignment"><a href="#RISC-vs-CISC-An-IIT-Assignment" class="headerlink" title="RISC vs CISC: An IIT Assignment"></a>RISC vs CISC: An IIT Assignment</h1><h3 id="RISC-Reduced-Instruction-Set-Computing"><a href="#RISC-Reduced-Instruction-Set-Computing" class="headerlink" title="RISC (Reduced Instruction Set Computing)"></a>RISC (Reduced Instruction Set Computing)</h3><h4 id="Definition"><a href="#Definition" class="headerlink" title="Definition"></a>Definition</h4><p>RISC is a CPU design architecture that utilizes a small set of simplified instructions, each executable within a single clock cycle, focusing on optimizing the execution of basic operations through register-to-register operations and a load-store memory access model.</p>
+<h4 id="Key-Features"><a href="#Key-Features" class="headerlink" title="Key Features"></a>Key Features</h4><ul>
+<li>Fixed-length instruction format</li>
+<li>Single clock cycle execution per instruction</li>
+<li>Load-store architecture</li>
+<li>Large register set</li>
+<li>Hardware-based pipelining</li>
+<li>Register-to-register operations</li>
+<li>Limited addressing modes</li>
+</ul>
+<h4 id="Advantages"><a href="#Advantages" class="headerlink" title="Advantages"></a>Advantages</h4><ol>
+<li>Simplified hardware design</li>
+<li>Better instruction pipelining</li>
+<li>Lower power consumption</li>
+<li>Faster instruction execution</li>
+<li>Easier to implement and debug</li>
+</ol>
+<h4 id="Disadvantages"><a href="#Disadvantages" class="headerlink" title="Disadvantages"></a>Disadvantages</h4><ol>
+<li>Requires more RAM for program storage</li>
+<li>More lines of code needed for complex operations</li>
+<li>Higher complexity in compiler design</li>
+<li>Limited instruction functionality</li>
+<li>Requires more registers</li>
+</ol>
+<h3 id="CISC-Complex-Instruction-Set-Computing"><a href="#CISC-Complex-Instruction-Set-Computing" class="headerlink" title="CISC (Complex Instruction Set Computing)"></a>CISC (Complex Instruction Set Computing)</h3><h4 id="Definition-1"><a href="#Definition-1" class="headerlink" title="Definition"></a>Definition</h4><p>CISC is a CPU design architecture that implements a large set of complex instructions of varying lengths, capable of performing multi-step operations within a single instruction, with direct memory-to-memory operations support.</p>
+<h4 id="Key-Features-1"><a href="#Key-Features-1" class="headerlink" title="Key Features"></a>Key Features</h4><ul>
+<li>Variable-length instruction format</li>
+<li>Multi-clock cycle instructions</li>
+<li>Memory-to-memory operations</li>
+<li>Smaller register set</li>
+<li>Multiple addressing modes</li>
+<li>Hardware-handled complexity</li>
+<li>Microcode implementation</li>
+</ul>
+<h4 id="Advantages-1"><a href="#Advantages-1" class="headerlink" title="Advantages"></a>Advantages</h4><ol>
+<li>Efficient memory usage</li>
+<li>Backward compatibility support</li>
+<li>Fewer lines of assembly code needed</li>
+<li>Direct memory-to-memory operations</li>
+<li>Complex operations in single instructions</li>
+</ol>
+<h4 id="Disadvantages-1"><a href="#Disadvantages-1" class="headerlink" title="Disadvantages"></a>Disadvantages</h4><ol>
+<li>Complex decoder circuitry required</li>
+<li>Higher power consumption</li>
+<li>Longer instruction execution time</li>
+<li>More complex hardware design</li>
+<li>Difficult to implement efficient pipelining</li>
+</ol>
+<h2 id="Detailed-Comparison-Table"><a href="#Detailed-Comparison-Table" class="headerlink" title="Detailed Comparison Table"></a>Detailed Comparison Table</h2><iframe 
+    src="/downloads/CSIT/Sem1/IIT/risc-vs-cisc.pdf"
+    width="100%"
     height="600px">
-</iframe>
+    >
+    </iframe>
 
-
-<p><strong>Description</strong>:<br>This unit introduces the concept of computers, covering their basic definition, history, and evolution over time. It also discusses the different generations of computers and how they are classified based on size, capacity, and applications.</p>
-<hr>
-<h2 id="Unit-2-The-Computer-System-Hardware"><a href="#Unit-2-The-Computer-System-Hardware" class="headerlink" title="Unit 2: The Computer System Hardware"></a>Unit 2: The Computer System Hardware</h2><p>In <strong><a href="/downloads/CSIT/Sem1/IIT/Unit-2.pdf">The Computer System Hardware</a></strong>, we explore the internal hardware components of a computer system. You can view the full PDF below:</p>
-<iframe 
-    src="/downloads/CSIT/Sem1/IIT/Unit-2.pdf"
-    width="100%" 
-    height="600px">
-</iframe>
-
-<p><strong>Description</strong>:<br>This unit dives deep into the essential components of computer hardware such as the CPU, memory, storage devices, and input&#x2F;output devices. It explains the functions of each hardware component and how they work together in a computer system.</p>
-<hr>
-<h2 id="Unit-3-Computer-Memory"><a href="#Unit-3-Computer-Memory" class="headerlink" title="Unit 3: Computer Memory"></a>Unit 3: Computer Memory</h2><p>In <a href="/downloads/CSIT/Sem1/IIT/Unit-3.pdf">The Computer System Hardware</a>, we cover the different types of memory used in computers. You can view the full PDF below:</p>
-<iframe 
-    src="/downloads/CSIT/Sem1/IIT/Unit-3.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-<p><strong>Description</strong>:<br>Memory is a critical component in a computer system. This unit focuses on the different types of memory, including primary memory (RAM), secondary memory (hard drives, SSDs), and cache memory. It explains how each type of memory works and their roles in a computer system.</p>
-<hr>
-<h2 id="Unit-4-Input-and-Output-Devices"><a href="#Unit-4-Input-and-Output-Devices" class="headerlink" title="Unit 4: Input and Output Devices"></a>Unit 4: Input and Output Devices</h2><p>In <a href="/downloads/CSIT/Sem1/IIT/Unit-4.pdf">Input and Output Devices</a>, we explore the various input and output devices used in computers. You can view the full PDF below:</p>
-<iframe 
-    src="/downloads/CSIT/Sem1/IIT/Unit-4.pdf"
-    width="100%" 
-    height="600px">
-</iframe>
-
-<p><strong>Description</strong>:<br>This unit covers all major input and output devices used in computers, including keyboards, mice, monitors, printers, and scanners. It discusses how each device communicates with the computer system and its role in data processing.</p>
-<hr>
-<!---
-## Unit 5: Data Representation
-**Unit 5: Data Representation** explores how data is represented inside a computer system. You can view the full PDF below:
-
-<iframe 
-    src="Unit-5.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit focuses on how data is represented in binary form within a computer system. It explains concepts like binary numbers, ASCII encoding, and how computers process different types of data such as text, images, and audio.
-
----
-
-## Unit 6: Computer Software
-**Unit 6: Computer Software** introduces the different types of software that make computers functional. You can view the full PDF below:
-
-<iframe 
-    src="Unit-6.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit covers the two main types of computer software: system software (like operating systems) and application software (like word processors, browsers, and games). It explains the role of software in making hardware usable and facilitating user tasks.
-
----
-
-## Unit 7: Data Communication and Computer Networks
-**Unit 7: Data Communication and Computer Networks** covers the fundamentals of data transmission and networking. You can view the full PDF below:
-
-<iframe 
-    src="Unit-7.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit explains how data is transmitted over communication channels and how networks are set up. It discusses network topologies, protocols, and types of networks such as LAN, WAN, and the internet.
-
----
-
-## Unit 8: The Internet and Internet Services
-**Unit 8: The Internet and Internet Services** explores how the internet functions and the different services available online. You can view the full PDF below:
-
-<iframe 
-    src="Unit-8.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-In this unit, we explore the working of the internet, web technologies, and internet services like email, VoIP, and cloud computing. It also covers concepts such as IP addresses, DNS, and HTTP.
-
----
-
-## Unit 9: Fundamentals of Databases
-**Unit 9: Fundamentals of Databases** introduces the concepts of database management systems. You can view the full PDF below:
-
-<iframe 
-    src="Unit-9.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit covers the basics of database systems, including relational databases, SQL, and data models. It explains how databases are used to store, manage, and retrieve data efficiently.
-
----
-
-## Unit 10: Multimedia
-**Unit 10: Multimedia** discusses how multimedia technologies work, from audio and video to graphics and animations. You can view the full PDF below:
-
-<iframe 
-    src="Unit-10.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit explains multimedia content and how it is used in computing. It covers digital images, sound, and video, and introduces multimedia software and technologies like video editing and streaming.
-
----
-
-## Unit 11: Computer Security
-**Unit 11: Computer Security** introduces the principles of securing computer systems. You can view the full PDF below:
-
-<iframe 
-    src="Unit-11.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit discusses the importance of computer security, including topics such as encryption, firewalls, antivirus software, and secure computing practices. It also covers common threats like malware and phishing.
-
---- -->
-
-<h3 id="About-the-Author"><a href="#About-the-Author" class="headerlink" title="About the Author"></a>About the Author</h3><p>Compiled by <strong>Shiv Kumar Mahato</strong>, B.Sc. CSIT Faculty at Patan Multiple Campus.</p>
+<p><a href="/downloads/CSIT/Sem1/IIT/risc-vs-cisc.pdf">Download PDF</a><br><a href="/downloads/CSIT/Sem1/IIT/coverpage.pdf">Cover Page</a></p>
 
                     
                 </div>
@@ -537,11 +460,11 @@ This unit discusses the importance of computer security, including topics such a
     <div class="copyright-info-content border-box">
         <div class="copyright-info-top border-box">
             <div class="copyright-post-title border-box text-ellipsis">
-                IIT Notes - CSIT Semester 1
+                RISC vs CISC : IIT Sem1 Assignment
             </div>
 
             <div class="copyright-post-link border-box text-ellipsis">
-                2024/12/01/CSIT/IIT/Notes/
+                CSIT/Semester-1/CSIT/IIT/Assignment1/
             </div>
         </div>
 
@@ -557,7 +480,7 @@ This unit discusses the importance of computer security, including topics such a
                 <div class="type">
                     Published
                 </div>
-                <div class="content">2024-12-01 00:00</div>
+                <div class="content">2024-11-28 05:45</div>
             </div>
 
 
@@ -593,15 +516,11 @@ This unit discusses the importance of computer security, including topics such a
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/IIT/">IIT</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Assignment/">Assignment</a>
                                     </li>
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/Notes/">Notes</a>
-                                    </li>
-                                
-                                    <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="../../../../../../tags/Slides/">Slides</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/IIT/">IIT</a>
                                     </li>
                                 
                             </ul>
@@ -617,15 +536,31 @@ This unit discusses the importance of computer security, including topics such a
                 
                     <div class="post-nav border-box">
                         
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/CSIT/Semester-1/CSIT/IIT/Notes/"
+                                   title="IIT Notes - CSIT Semester 1"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">IIT Notes - CSIT Semester 1</span>
+                                        <span class="post-nav-item">Prev posts</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
                         
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="../../Digital-Logic/Notes/"
-                                   title="Digital Logic Notes - CSIT Semester 1"
+                                   href="/Study-Materials/CSIT/Semester-1/CSIT/C-Programming/Notes/"
+                                   title="C Programming Notes - CSIT Semester 1"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Digital Logic Notes - CSIT Semester 1</span>
+                                        <span class="post-nav-title-item text-ellipsis">C Programming Notes - CSIT Semester 1</span>
                                         <span class="post-nav-item">Next posts</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
@@ -653,7 +588,7 @@ This unit discusses the importance of computer security, including topics such a
             <div class="pc-post-toc right-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SKM-Subject-Study-Materials-IIT-Semester-1"><span class="nav-text">SKM Subject Study Materials - IIT Semester 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-1-Introduction-to-Computers"><span class="nav-text">Unit 1: Introduction to Computers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-2-The-Computer-System-Hardware"><span class="nav-text">Unit 2: The Computer System Hardware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-3-Computer-Memory"><span class="nav-text">Unit 3: Computer Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-4-Input-and-Output-Devices"><span class="nav-text">Unit 4: Input and Output Devices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#About-the-Author"><span class="nav-text">About the Author</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RISC-vs-CISC-An-IIT-Assignment"><span class="nav-text">RISC vs CISC: An IIT Assignment</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RISC-Reduced-Instruction-Set-Computing"><span class="nav-text">RISC (Reduced Instruction Set Computing)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition"><span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Key-Features"><span class="nav-text">Key Features</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Advantages"><span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Disadvantages"><span class="nav-text">Disadvantages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CISC-Complex-Instruction-Set-Computing"><span class="nav-text">CISC (Complex Instruction Set Computing)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition-1"><span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Key-Features-1"><span class="nav-text">Key Features</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Advantages-1"><span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Disadvantages-1"><span class="nav-text">Disadvantages</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Detailed-Comparison-Table"><span class="nav-text">Detailed Comparison Table</span></a></li></ol></li></ol>
     </div>
 </div>
 
@@ -673,7 +608,7 @@ This unit discusses the importance of computer security, including topics such a
     <div class="copyright-info info-item">
     &copy;&nbsp;2024
     
-            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="../../../../../../index.html">Llyr</a>
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Llyr</a>
         
     </div>
 
@@ -685,11 +620,29 @@ This unit discusses the importance of computer security, including topics such a
         
         <div class="deploy-info info-item">
             
-            This site is deployed on <span class="tooltip" data-tooltip-content="GitHub Pages"><img src="../../../../../../images/brands/github.png"></span>
+            This site is deployed on <span class="tooltip" data-tooltip-content="Netlify"><img src="/images/brands/netlify.png"></span>
             
         </div>
     
 
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
     
 
     
@@ -820,7 +773,7 @@ This unit discusses the importance of computer security, including topics such a
             <div class="tablet-post-toc">
                 <div class="post-toc-wrap border-box">
     <div class="post-toc border-box">
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SKM-Subject-Study-Materials-IIT-Semester-1"><span class="nav-text">SKM Subject Study Materials - IIT Semester 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-1-Introduction-to-Computers"><span class="nav-text">Unit 1: Introduction to Computers</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-2-The-Computer-System-Hardware"><span class="nav-text">Unit 2: The Computer System Hardware</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-3-Computer-Memory"><span class="nav-text">Unit 3: Computer Memory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit-4-Input-and-Output-Devices"><span class="nav-text">Unit 4: Input and Output Devices</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#About-the-Author"><span class="nav-text">About the Author</span></a></li></ol></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RISC-vs-CISC-An-IIT-Assignment"><span class="nav-text">RISC vs CISC: An IIT Assignment</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RISC-Reduced-Instruction-Set-Computing"><span class="nav-text">RISC (Reduced Instruction Set Computing)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition"><span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Key-Features"><span class="nav-text">Key Features</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Advantages"><span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Disadvantages"><span class="nav-text">Disadvantages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CISC-Complex-Instruction-Set-Computing"><span class="nav-text">CISC (Complex Instruction Set Computing)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Definition-1"><span class="nav-text">Definition</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Key-Features-1"><span class="nav-text">Key Features</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Advantages-1"><span class="nav-text">Advantages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Disadvantages-1"><span class="nav-text">Disadvantages</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Detailed-Comparison-Table"><span class="nav-text">Detailed Comparison Table</span></a></li></ol></li></ol>
     </div>
 </div>
 
@@ -835,32 +788,36 @@ This unit discusses the importance of computer security, including topics such a
 
 <!-- common js -->
 
-<script src="js/utils.js"></script>
+<script src="/js/utils.js"></script>
 
-<script src="js/header-shrink.js"></script>
+<script src="/js/header-shrink.js"></script>
 
-<script src="js/back2top.js"></script>
+<script src="/js/back2top.js"></script>
 
-<script src="js/toggle-theme.js"></script>
+<script src="/js/toggle-theme.js"></script>
 
-<script src="js/code-block.js"></script>
+<script src="/js/code-block.js"></script>
 
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 
-<script src="js/libs/anime.min.js"></script>
+<script src="/js/libs/anime.min.js"></script>
 
 
 <!-- local search -->
 
     
-<script src="js/local-search.js"></script>
+<script src="/js/local-search.js"></script>
 
 
 
 <!-- lazyload -->
 
+    
+<script src="/js/lazyload.js"></script>
 
-<div class="">
+
+
+<div class="pjax">
     <!-- home page -->
     
 
@@ -868,20 +825,20 @@ This unit discusses the importance of computer security, including topics such a
     
         <!-- post-helper -->
         
-<script src="js/post/post-helper.js"></script>
+<script src="/js/post/post-helper.js"></script>
 
 
         <!-- toc -->
         
             
-<script src="js/post/toc.js"></script>
+<script src="/js/post/toc.js"></script>
 
         
 
         <!-- copyright-info -->
         
             
-<script src="js/post/copyright-info.js"></script>
+<script src="/js/post/copyright-info.js"></script>
 
         
 
@@ -906,6 +863,39 @@ This unit discusses the importance of computer security, including topics such a
 
 
 <!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
 
 
 

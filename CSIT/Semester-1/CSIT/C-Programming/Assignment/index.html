@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="C Programming Lab Assignments for BSc CSIT First Semester at Patan Multiple Campus">
+    <meta name="author" content="Llyr">
+    <script defer src="/_vercel/insights/script.js"></script>
+    
+    <title>
+        
+            C-Programming Lab Assignment 1 |
+        
+        CSIT 101
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"csit101.netlify.app","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#a67eb7","title":"CSIT 101","author":"Llyr","avatar":"/images/user.png","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","tools":"/tools || fa-solid fa-tools","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":null,"background_img_dark":null,"description":"Notes for you, by us! :D","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/Llyr4472","bilibili":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"contact@prashantgiri360.com.np"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD","copyright_info":true,"share":false,"reward":{"enable":false,"img_link":null,"text":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":true,"site_deploy":{"enable":true,"provider":"netlify","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom-1.css"],"js":[null]},"root":"","source_data":{"tools":[{"category":"Tools","anchorId":"VG9vbHM0"},{"name":"Chatgpt","link":"https://chat.openai.com","description":"ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.","icon":"/images/tools/openai.png"},{"name":"Desmos","link":"https://www.desmos.com","description":"Desmos is a digital calculator tool that allows users to create graphs, tables, and more.","icon":"/images/tools/desmos.jpg"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               CSIT 101
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tools"></i>
+                                
+                                TOOLS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tools"></i>
+                                </span>
+                            
+                            TOOLS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        C-Programming Lab Assignment 1
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/user.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Llyr</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-12-05</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Thu Dec 05 2024 18:11:12 GMT+0545">2024-12-05</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CSIT/">CSIT</a></li>
+                        
+                    
+                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="/categories/CSIT/Semester-1/">Semester 1</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Assignment/">Assignment</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/C-Programming/">C-Programming</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Lab/">Lab</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h1><ol>
+<li><p>. Write a C program to print your name, date of birth and mobile number and Name of<br>College using printf() and puts() functions in following format.<br>Name: ……<br>DOB:<br>MobileNO:<br>Campus:</p>
+</li>
+<li><p>Write a C program to display size in bytes of different data types using sizeof() operator.</p>
+</li>
+<li><p>Write algorithm, flow-chart and program to compute the area and circumference of a circle with given radius r as input defining π as constant.</p>
+</li>
+<li><p>Write a C program to convert specified no of days into years, weeks and days. (Note: Ignore leap year.)</p>
+</li>
+<li><p>Write a C program that accepts two integers from the user as input and calculates the sum, difference, product, quotient and remainder applying different arithmetic operators between two integers.</p>
+</li>
+<li><p>Write algorithm pseudo-code as well as draw flow chart to Compute the roots of the quadratic equation ax² + bx + c &#x3D; 0 for given coefficient input a, b and c. Write C program.</p>
+</li>
+<li><p>Write a C program to check a given integer is positive even, negative even, positive odd or negative odd.</p>
+</li>
+<li><p>Write a C program to read the score of student and print the grade according to score as:</p>
+<ul>
+<li>Score &gt;&#x3D; 80: “Distinction”</li>
+<li>Score 70-79: “First Division”</li>
+<li>Score 55-69: “Second Division”</li>
+<li>Score 40-54: “Third Division”</li>
+<li>Score &lt; 40: “Fail”</li>
+</ul>
+</li>
+<li><p>Write a C program to find the sum of first 100 natural numbers using loop.</p>
+</li>
+<li><p>Write a program in C to display the multiplication table of 1 to n where n is input number.</p>
+</li>
+<li><p>Write algorithm and program to compute the followings using for, do while and while loop separately:<br>a. factorial of an integer N<br>b. computation of aᵇ (a raised to power b)</p>
+</li>
+<li><p>Write a program in C to make such a pattern of asterisk(*) below using loop:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*</span><br><span class="line">* *</span><br><span class="line">* * *</span><br><span class="line">* * * *</span><br></pre></td></tr></table></figure>
+<p>up to n lines where n is an integer</p>
+</li>
+<li><p>Write a program using loop to print Floyd’s triangle as given below when input is n:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2 3</span><br><span class="line">4 5 6</span><br><span class="line">7 8 9 10</span><br><span class="line">11 12 13 14</span><br></pre></td></tr></table></figure>
+<p>up to n rows</p>
+</li>
+<li><p>Write a program to get input of two 3x3 matrices and find out the sum and product of the matrices and display the result.</p>
+</li>
+<li><p>Write a program to get a string as input and print the length of string, reverse of the string:<br>a. Using String Library Function<br>b. Using your own function</p>
+</li>
+<li><p>Write a program that takes input of two numbers and any one operator (+,-,*,&#x2F;,%) as input and pass those numbers and operator to a function. The function should calculate and return the result. Display the result of computation.</p>
+</li>
+<li><p>Write a program defining an array with dynamic memory allocation of integers and compute the sum of the array using function.</p>
+</li>
+<li><p>Write a program to swap two numbers defining a function swap().</p>
+</li>
+<li><p>Write a program defining a structure to store student data (rollno, f_name, l_name, address, mobileno), input data for n students and display the record.</p>
+</li>
+<li><p>Write a program to prompt user to input filename and read the content of file and display in screen.</p>
+</li>
+<li><p>Write a program to read from a text file and count the number of lines and characters in that file.</p>
+</li>
+<li><p>Write a program to read a text file and copy all contents in the new file.</p>
+</li>
+</ol>
+<hr>
+<h1 id="Solutions"><a href="#Solutions" class="headerlink" title="Solutions"></a>Solutions</h1><hr>
+<h3 id="1-Print-Name-DOB-Mobile-Number-and-Campus"><a href="#1-Print-Name-DOB-Mobile-Number-and-Campus" class="headerlink" title="1. Print Name, DOB, Mobile Number, and Campus"></a>1. <strong>Print Name, DOB, Mobile Number, and Campus</strong></h3><p><strong>Code</strong>: </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Name: John Doe\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;DOB: 2000-01-01\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Mobile No: 9800000000\n&quot;</span>);</span><br><span class="line">    <span class="built_in">puts</span>(<span class="string">&quot;Campus: Patan Multiple Campus&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Name: John Doe</span><br><span class="line">DOB: 2000-01-01</span><br><span class="line">Mobile No: 9800000000</span><br><span class="line">Campus: Patan Multiple Campus</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="2-Display-Size-of-Data-Types"><a href="#2-Display-Size-of-Data-Types" class="headerlink" title="2. Display Size of Data Types"></a>2. <strong>Display Size of Data Types</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of int: %lu bytes\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of float: %lu bytes\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">float</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of double: %lu bytes\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">double</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Size of char: %lu byte\n&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">char</span>));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Size of int: 4 bytes</span><br><span class="line">Size of float: 4 bytes</span><br><span class="line">Size of double: 8 bytes</span><br><span class="line">Size of char: 1 byte</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="3-Area-and-Circumference-of-Circle"><a href="#3-Area-and-Circumference-of-Circle" class="headerlink" title="3. Area and Circumference of Circle"></a>3. <strong>Area and Circumference of Circle</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PI 3.14159</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> radius, area, circumference;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter radius: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f&quot;</span>, &amp;radius);</span><br><span class="line">    area = PI * radius * radius;</span><br><span class="line">    circumference = <span class="number">2</span> * PI * radius;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Area: %.2f\nCircumference: %.2f\n&quot;</span>, area, circumference);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter radius: 5</span><br><span class="line">Area: 78.54</span><br><span class="line">Circumference: 31.42</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="4-Days-to-Years-Weeks-and-Days"><a href="#4-Days-to-Years-Weeks-and-Days" class="headerlink" title="4. Days to Years, Weeks, and Days"></a>4. <strong>Days to Years, Weeks, and Days</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> days, years, weeks, remaining_days;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter days: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;days);</span><br><span class="line">    years = days / <span class="number">365</span>;</span><br><span class="line">    weeks = (days % <span class="number">365</span>) / <span class="number">7</span>;</span><br><span class="line">    remaining_days = days % <span class="number">7</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d years, %d weeks, %d days\n&quot;</span>, years, weeks, remaining_days);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter days: 400</span><br><span class="line">1 years, 5 weeks, 0 days</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="5-Arithmetic-Operations"><a href="#5-Arithmetic-Operations" class="headerlink" title="5. Arithmetic Operations"></a>5. <strong>Arithmetic Operations</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> a, b;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter two integers: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;a, &amp;b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Sum: %d\n&quot;</span>, a + b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Difference: %d\n&quot;</span>, a - b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Product: %d\n&quot;</span>, a * b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Quotient: %d\n&quot;</span>, a / b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Remainder: %d\n&quot;</span>, a % b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Enter two integers: 10 3</span><br><span class="line">Sum: 13</span><br><span class="line">Difference: 7</span><br><span class="line">Product: 30</span><br><span class="line">Quotient: 3</span><br><span class="line">Remainder: 1</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-Roots-of-Quadratic-Equation"><a href="#6-Roots-of-Quadratic-Equation" class="headerlink" title="6. Roots of Quadratic Equation"></a>6. <strong>Roots of Quadratic Equation</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;math.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> a, b, c, discriminant, root1, root2;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter coefficients a, b, and c: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f %f %f&quot;</span>, &amp;a, &amp;b, &amp;c);</span><br><span class="line">    discriminant = b * b - <span class="number">4</span> * a * c;</span><br><span class="line">    <span class="keyword">if</span> (discriminant &gt; <span class="number">0</span>) &#123;</span><br><span class="line">        root1 = (-b + <span class="built_in">sqrt</span>(discriminant)) / (<span class="number">2</span> * a);</span><br><span class="line">        root2 = (-b - <span class="built_in">sqrt</span>(discriminant)) / (<span class="number">2</span> * a);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Roots: %.2f and %.2f\n&quot;</span>, root1, root2);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (discriminant == <span class="number">0</span>) &#123;</span><br><span class="line">        root1 = -b / (<span class="number">2</span> * a);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Root: %.2f\n&quot;</span>, root1);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;No real roots.\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter coefficients a, b, and c: 1 -3 2</span><br><span class="line">Roots: 2.00 and 1.00</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="7-Check-Integer-Type"><a href="#7-Check-Integer-Type" class="headerlink" title="7. Check Integer Type"></a>7. <strong>Check Integer Type</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> num;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter an integer: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;num);</span><br><span class="line">    <span class="keyword">if</span> (num &gt; <span class="number">0</span> &amp;&amp; num % <span class="number">2</span> == <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Positive Even\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (num &gt; <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Positive Odd\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (num &lt; <span class="number">0</span> &amp;&amp; num % <span class="number">2</span> == <span class="number">0</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Negative Even\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Negative Odd\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter an integer: -4</span><br><span class="line">Negative Even</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="8-Grade-Calculation"><a href="#8-Grade-Calculation" class="headerlink" title="8. Grade Calculation"></a>8. <strong>Grade Calculation</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> score;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter score: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;score);</span><br><span class="line">    <span class="keyword">if</span> (score &gt;= <span class="number">80</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Distinction\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">70</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;First Division\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">55</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Second Division\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (score &gt;= <span class="number">40</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Third Division\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Fail\n&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter score: 75</span><br><span class="line">First Division</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="9-Sum-of-First-100-Natural-Numbers"><a href="#9-Sum-of-First-100-Natural-Numbers" class="headerlink" title="9. Sum of First 100 Natural Numbers"></a>9. <strong>Sum of First 100 Natural Numbers</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">100</span>; i++)</span><br><span class="line">        sum += i;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Sum: %d\n&quot;</span>, sum);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Sum: 5050</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="10-Multiplication-Table-of-1-to-n"><a href="#10-Multiplication-Table-of-1-to-n" class="headerlink" title="10. Multiplication Table of 1 to n"></a>10. <strong>Multiplication Table of 1 to n</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter n: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Table of %d:\n&quot;</span>, i);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= <span class="number">10</span>; j++)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d x %d = %d\n&quot;</span>, i, j, i * j);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Enter n: 2</span><br><span class="line">Table of 1:</span><br><span class="line">1 x 1 = 1</span><br><span class="line">1 x 2 = 2</span><br><span class="line">...</span><br><span class="line">Table of 2:</span><br><span class="line">2 x 1 = 2</span><br><span class="line">2 x 2 = 4</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="11-Factorial-and-Power-Calculation"><a href="#11-Factorial-and-Power-Calculation" class="headerlink" title="11. Factorial and Power Calculation"></a>11. <strong>Factorial and Power Calculation</strong></h3><p><strong>Factorial Using <code>for</code> Loop</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> n, factorial = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter n: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">        factorial *= i;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Factorial: %d\n&quot;</span>, factorial);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter n: 5</span><br><span class="line">Factorial: 120</span><br></pre></td></tr></table></figure>
+
+<p><strong>Power Calculation Using <code>while</code> Loop</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> base, <span class="built_in">exp</span>, result = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter base and exponent: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;base, &amp;<span class="built_in">exp</span>);</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">exp</span>-- &gt; <span class="number">0</span>)</span><br><span class="line">        result *= base;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Result: %d\n&quot;</span>, result);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter base and exponent: 2 3</span><br><span class="line">Result: 8</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="12-Pattern-of-Asterisks"><a href="#12-Pattern-of-Asterisks" class="headerlink" title="12. Pattern of Asterisks"></a>12. <strong>Pattern of Asterisks</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter number of lines: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= i; j++)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;* &quot;</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">*</span><br><span class="line">* *</span><br><span class="line">* * *</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="13-Floyd’s-Triangle"><a href="#13-Floyd’s-Triangle" class="headerlink" title="13. Floyd’s Triangle"></a>13. <strong>Floyd’s Triangle</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> n, num = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter number of rows: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= i; j++)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, num++);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Enter number of rows: 4</span><br><span class="line">1 </span><br><span class="line">2 3 </span><br><span class="line">4 5 6 </span><br><span class="line">7 8 9 10</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="14-Matrix-Sum-and-Product"><a href="#14-Matrix-Sum-and-Product" class="headerlink" title="14. Matrix Sum and Product"></a>14. <strong>Matrix Sum and Product</strong></h3><p><strong>Code</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">readMatrix</span><span class="params">(<span class="type">int</span> matrix[<span class="number">3</span>][<span class="number">3</span>])</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;matrix[i][j]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">printMatrix</span><span class="params">(<span class="type">int</span> matrix[<span class="number">3</span>][<span class="number">3</span>])</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, matrix[i][j]);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">addMatrices</span><span class="params">(<span class="type">int</span> a[<span class="number">3</span>][<span class="number">3</span>], <span class="type">int</span> b[<span class="number">3</span>][<span class="number">3</span>], <span class="type">int</span> result[<span class="number">3</span>][<span class="number">3</span>])</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++)</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="number">3</span>; j++)</span><br><span class="line">            result[i][j] = a[i][j] + b[i][j];</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> a[<span class="number">3</span>][<span class="number">3</span>], b[<span class="number">3</span>][<span class="number">3</span>], sum[<span class="number">3</span>][<span class="number">3</span>];</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter first matrix:\n&quot;</span>);</span><br><span class="line">    readMatrix(a);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter second matrix:\n&quot;</span>);</span><br><span class="line">    readMatrix(b);</span><br><span class="line">    addMatrices(a, b, sum);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Sum:\n&quot;</span>);</span><br><span class="line">    printMatrix(sum);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Enter first matrix:</span><br><span class="line">1 2 3</span><br><span class="line">4 5 6</span><br><span class="line">7 8 9</span><br><span class="line">Enter second matrix:</span><br><span class="line">9 8 7</span><br><span class="line">6 5 4</span><br><span class="line">3 2 1</span><br><span class="line">Sum:</span><br><span class="line">10 10 10</span><br><span class="line">10 10 10</span><br><span class="line">10 10 10</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="15-String-Length-and-Reverse"><a href="#15-String-Length-and-Reverse" class="headerlink" title="15. String Length and Reverse"></a>15. <strong>String Length and Reverse</strong></h3><p><strong>Program</strong> <em>(Using String Library Functions)</em>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> str[<span class="number">100</span>];</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter a string: &quot;</span>);</span><br><span class="line">    gets(str);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Length: %lu\n&quot;</span>, <span class="built_in">strlen</span>(str));</span><br><span class="line">    strrev(str);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Reversed: %s\n&quot;</span>, str);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter a string: Nepal</span><br><span class="line">Length: 5</span><br><span class="line">Reversed: lapeN</span><br></pre></td></tr></table></figure>
+
+<p><strong>Program</strong> <em>(Without String Library Functions)</em>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">stringLength</span><span class="params">(<span class="type">char</span> str[])</span> &#123;</span><br><span class="line">    <span class="type">int</span> length = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (str[length] != <span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">        length++;</span><br><span class="line">    <span class="keyword">return</span> length;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">reverseString</span><span class="params">(<span class="type">char</span> str[])</span> &#123;</span><br><span class="line">    <span class="type">int</span> len = stringLength(str);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; len / <span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="type">char</span> temp = str[i];</span><br><span class="line">        str[i] = str[len - i - <span class="number">1</span>];</span><br><span class="line">        str[len - i - <span class="number">1</span>] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> str[<span class="number">100</span>];</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter a string: &quot;</span>);</span><br><span class="line">    gets(str);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Length: %d\n&quot;</span>, stringLength(str));</span><br><span class="line">    reverseString(str);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Reversed: %s\n&quot;</span>, str);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter a string: HelloWorld</span><br><span class="line">Length: 10</span><br><span class="line">Reversed: dlroWolleH</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="16-Calculator-Using-Functions"><a href="#16-Calculator-Using-Functions" class="headerlink" title="16. Calculator Using Functions"></a>16. <strong>Calculator Using Functions</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">float</span> <span class="title function_">calculate</span><span class="params">(<span class="type">float</span> a, <span class="type">float</span> b, <span class="type">char</span> op)</span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> (op) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>: <span class="keyword">return</span> a + b;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>: <span class="keyword">return</span> a - b;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>: <span class="keyword">return</span> a * b;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>: <span class="keyword">return</span> a / b;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&#x27;%&#x27;</span>: <span class="keyword">return</span> (<span class="type">int</span>)a % (<span class="type">int</span>)b;</span><br><span class="line">        <span class="keyword">default</span>: <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> num1, num2;</span><br><span class="line">    <span class="type">char</span> op;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter two numbers and an operator: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%f %f %c&quot;</span>, &amp;num1, &amp;num2, &amp;op);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Result: %.2f\n&quot;</span>, calculate(num1, num2, op));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter two numbers and an operator: 10 3 %</span><br><span class="line">Result: 1.00</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="17-Dynamic-Memory-Allocation-and-Sum-of-Array"><a href="#17-Dynamic-Memory-Allocation-and-Sum-of-Array" class="headerlink" title="17. Dynamic Memory Allocation and Sum of Array"></a>17. <strong>Dynamic Memory Allocation and Sum of Array</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">sumArray</span><span class="params">(<span class="type">int</span> *arr, <span class="type">int</span> size)</span> &#123;</span><br><span class="line">    <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; size; i++)</span><br><span class="line">        sum += arr[i];</span><br><span class="line">    <span class="keyword">return</span> sum;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> n, *arr;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter size of array: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    arr = (<span class="type">int</span> *)<span class="built_in">malloc</span>(n * <span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter %d elements: &quot;</span>, n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;arr[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Sum: %d\n&quot;</span>, sumArray(arr, n));</span><br><span class="line">    <span class="built_in">free</span>(arr);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter size of array: 5</span><br><span class="line">Enter 5 elements: 1 2 3 4 5</span><br><span class="line">Sum: 15</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="18-Swap-Two-Numbers-Using-a-Function"><a href="#18-Swap-Two-Numbers-Using-a-Function" class="headerlink" title="18. Swap Two Numbers Using a Function"></a>18. <strong>Swap Two Numbers Using a Function</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> *a, <span class="type">int</span> *b)</span> &#123;</span><br><span class="line">    <span class="type">int</span> temp = *a;</span><br><span class="line">    *a = *b;</span><br><span class="line">    *b = temp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> x, y;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter two numbers: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d %d&quot;</span>, &amp;x, &amp;y);</span><br><span class="line">    swap(&amp;x, &amp;y);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;After swapping: x = %d, y = %d\n&quot;</span>, x, y);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter two numbers: 5 10</span><br><span class="line">After swapping: x = 10, y = 5</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="19-Structure-for-Student-Data"><a href="#19-Structure-for-Student-Data" class="headerlink" title="19. Structure for Student Data"></a>19. <strong>Structure for Student Data</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Student</span> &#123;</span></span><br><span class="line">    <span class="type">int</span> rollno;</span><br><span class="line">    <span class="type">char</span> fname[<span class="number">50</span>], lname[<span class="number">50</span>], address[<span class="number">100</span>];</span><br><span class="line">    <span class="type">char</span> mobileno[<span class="number">15</span>];</span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter number of students: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;n);</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Student</span> <span class="title">students</span>[<span class="title">n</span>];</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Enter details for student %d:\n&quot;</span>, i + <span class="number">1</span>);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Roll No: &quot;</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;students[i].rollno);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;First Name: &quot;</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, students[i].fname);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Last Name: &quot;</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, students[i].lname);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Address: &quot;</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, students[i].address);</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Mobile No: &quot;</span>);</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, students[i].mobileno);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Student Records:\n&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Roll No: %d, Name: %s %s, Address: %s, Mobile No: %s\n&quot;</span>,</span><br><span class="line">               students[i].rollno, students[i].fname, students[i].lname,</span><br><span class="line">               students[i].address, students[i].mobileno);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Enter number of students: 1</span><br><span class="line">Enter details for student 1:</span><br><span class="line">Roll No: 1</span><br><span class="line">First Name: Prashant</span><br><span class="line">Last Name: Giri</span><br><span class="line">Address: Kathmandu</span><br><span class="line">Mobile No: 9876543210</span><br><span class="line">Student Records:</span><br><span class="line">Roll No: 1, Name: Prashant Giri, Address: Kathmandu, Mobile No: 9876543210</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="20-Read-and-Display-File-Content"><a href="#20-Read-and-Display-File-Content" class="headerlink" title="20. Read and Display File Content"></a>20. <strong>Read and Display File Content</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> filename[<span class="number">50</span>], ch;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter filename: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, filename);</span><br><span class="line">    FILE *file = fopen(filename, <span class="string">&quot;r&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (file == <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;File not found.\n&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> ((ch = fgetc(file)) != EOF)</span><br><span class="line">        <span class="built_in">putchar</span>(ch);</span><br><span class="line">    fclose(file);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong> <em>(assuming file contains “Hello World”)</em>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter filename: input.txt</span><br><span class="line">Hello World</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="21-Count-Lines-and-Characters-in-File"><a href="#21-Count-Lines-and-Characters-in-File" class="headerlink" title="21. Count Lines and Characters in File"></a>21. <strong>Count Lines and Characters in File</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> filename[<span class="number">50</span>], ch;</span><br><span class="line">    <span class="type">int</span> lines = <span class="number">0</span>, chars = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter filename: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, filename);</span><br><span class="line">    FILE *file = fopen(filename, <span class="string">&quot;r&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (file == <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;File not found.\n&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> ((ch = fgetc(file)) != EOF) &#123;</span><br><span class="line">        chars++;</span><br><span class="line">        <span class="keyword">if</span> (ch == <span class="string">&#x27;\n&#x27;</span>)</span><br><span class="line">            lines++;</span><br><span class="line">    &#125;</span><br><span class="line">    fclose(file);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Lines: %d, Characters: %d\n&quot;</span>, lines, chars);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong> <em>(assuming file contains two lines “Hello\nWorld”)</em>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter filename: input.txt</span><br><span class="line">Lines: 2, Characters: 11</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="22-Copy-Content-to-New-File"><a href="#22-Copy-Content-to-New-File" class="headerlink" title="22. Copy Content to New File"></a>22. <strong>Copy Content to New File</strong></h3><p><strong>Program</strong>:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> src[<span class="number">50</span>], dest[<span class="number">50</span>], ch;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter source filename: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, src);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Enter destination filename: &quot;</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, dest);</span><br><span class="line">    FILE *srcFile = fopen(src, <span class="string">&quot;r&quot;</span>);</span><br><span class="line">    FILE *destFile = fopen(dest, <span class="string">&quot;w&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (srcFile == <span class="literal">NULL</span> || destFile == <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;File error.\n&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span> ((ch = fgetc(srcFile)) != EOF)</span><br><span class="line">        fputc(ch, destFile);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;File copied successfully.\n&quot;</span>);</span><br><span class="line">    fclose(srcFile);</span><br><span class="line">    fclose(destFile);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Sample Input&#x2F;Output</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Enter source filename: input.txt</span><br><span class="line">Enter destination filename: output.txt</span><br><span class="line">File copied successfully.</span><br></pre></td></tr></table></figure>
+
+<p>Let me know if there are any errors.</p>
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                C-Programming Lab Assignment 1
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                CSIT/Semester-1/CSIT/C-Programming/Assignment/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Llyr</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-12-05 05:45</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Assignment/">Assignment</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/C-Programming/">C-Programming</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Lab/">Lab</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/Study-Materials/CSIT/Semester-1/CSIT/Digital-Logic/Notes/"
+                                   title="Digital Logic Notes - CSIT Semester 1"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Digital Logic Notes - CSIT Semester 1</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Questions"><span class="nav-text">Questions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Solutions"><span class="nav-text">Solutions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Print-Name-DOB-Mobile-Number-and-Campus"><span class="nav-text">1. Print Name, DOB, Mobile Number, and Campus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Display-Size-of-Data-Types"><span class="nav-text">2. Display Size of Data Types</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Area-and-Circumference-of-Circle"><span class="nav-text">3. Area and Circumference of Circle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Days-to-Years-Weeks-and-Days"><span class="nav-text">4. Days to Years, Weeks, and Days</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Arithmetic-Operations"><span class="nav-text">5. Arithmetic Operations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Roots-of-Quadratic-Equation"><span class="nav-text">6. Roots of Quadratic Equation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Check-Integer-Type"><span class="nav-text">7. Check Integer Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Grade-Calculation"><span class="nav-text">8. Grade Calculation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Sum-of-First-100-Natural-Numbers"><span class="nav-text">9. Sum of First 100 Natural Numbers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Multiplication-Table-of-1-to-n"><span class="nav-text">10. Multiplication Table of 1 to n</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Factorial-and-Power-Calculation"><span class="nav-text">11. Factorial and Power Calculation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Pattern-of-Asterisks"><span class="nav-text">12. Pattern of Asterisks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-Floyd%E2%80%99s-Triangle"><span class="nav-text">13. Floyd’s Triangle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-Matrix-Sum-and-Product"><span class="nav-text">14. Matrix Sum and Product</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-String-Length-and-Reverse"><span class="nav-text">15. String Length and Reverse</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-Calculator-Using-Functions"><span class="nav-text">16. Calculator Using Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-Dynamic-Memory-Allocation-and-Sum-of-Array"><span class="nav-text">17. Dynamic Memory Allocation and Sum of Array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-Swap-Two-Numbers-Using-a-Function"><span class="nav-text">18. Swap Two Numbers Using a Function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-Structure-for-Student-Data"><span class="nav-text">19. Structure for Student Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-Read-and-Display-File-Content"><span class="nav-text">20. Read and Display File Content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-Count-Lines-and-Characters-in-File"><span class="nav-text">21. Count Lines and Characters in File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-Copy-Content-to-New-File"><span class="nav-text">22. Copy Content to New File</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2024
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Llyr</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            This site is deployed on <span class="tooltip" data-tooltip-content="Netlify"><img src="/images/brands/netlify.png"></span>
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Questions"><span class="nav-text">Questions</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Solutions"><span class="nav-text">Solutions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Print-Name-DOB-Mobile-Number-and-Campus"><span class="nav-text">1. Print Name, DOB, Mobile Number, and Campus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Display-Size-of-Data-Types"><span class="nav-text">2. Display Size of Data Types</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Area-and-Circumference-of-Circle"><span class="nav-text">3. Area and Circumference of Circle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-Days-to-Years-Weeks-and-Days"><span class="nav-text">4. Days to Years, Weeks, and Days</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-Arithmetic-Operations"><span class="nav-text">5. Arithmetic Operations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-Roots-of-Quadratic-Equation"><span class="nav-text">6. Roots of Quadratic Equation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Check-Integer-Type"><span class="nav-text">7. Check Integer Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-Grade-Calculation"><span class="nav-text">8. Grade Calculation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-Sum-of-First-100-Natural-Numbers"><span class="nav-text">9. Sum of First 100 Natural Numbers</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-Multiplication-Table-of-1-to-n"><span class="nav-text">10. Multiplication Table of 1 to n</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-Factorial-and-Power-Calculation"><span class="nav-text">11. Factorial and Power Calculation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-Pattern-of-Asterisks"><span class="nav-text">12. Pattern of Asterisks</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13-Floyd%E2%80%99s-Triangle"><span class="nav-text">13. Floyd’s Triangle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#14-Matrix-Sum-and-Product"><span class="nav-text">14. Matrix Sum and Product</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15-String-Length-and-Reverse"><span class="nav-text">15. String Length and Reverse</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#16-Calculator-Using-Functions"><span class="nav-text">16. Calculator Using Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#17-Dynamic-Memory-Allocation-and-Sum-of-Array"><span class="nav-text">17. Dynamic Memory Allocation and Sum of Array</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#18-Swap-Two-Numbers-Using-a-Function"><span class="nav-text">18. Swap Two Numbers Using a Function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#19-Structure-for-Student-Data"><span class="nav-text">19. Structure for Student Data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#20-Read-and-Display-File-Content"><span class="nav-text">20. Read and Display File Content</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#21-Count-Lines-and-Characters-in-File"><span class="nav-text">21. Count Lines and Characters in File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-Copy-Content-to-New-File"><span class="nav-text">22. Copy Content to New File</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="/js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+    
+        
+    
+
+</body>
+</html>
