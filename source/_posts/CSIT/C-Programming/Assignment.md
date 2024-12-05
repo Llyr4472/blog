@@ -11,7 +11,7 @@ categories:
   - Semester 1
 ---
 
-# C Programming Lab Assignments
+# Questions
 
 1. . Write a C program to print your name, date of birth and mobile number and Name of
 College using printf() and puts() functions in following format.
@@ -86,9 +86,9 @@ Campus:
 
 22. Write a program to read a text file and copy all contents in the new file.
 
+---
 
-
-Here are the solutions for the assignments:
+# Solutions
 ---
 
 ### 1. **Print Name, DOB, Mobile Number, and Campus**
