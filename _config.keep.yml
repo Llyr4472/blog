@@ -101,7 +101,7 @@ scroll:
 # ---------------------------------------------------------------------------------------
 home:
   # Website announcement in home page
-  announcement: false
+  announcement:
 
   # Show category in home page post block
   category: true # Option values: true | false
@@ -148,7 +148,7 @@ post:
 
   # Reward author
   reward:
-    enable: true # Option values: true | false
+    enable: false # Option values: true | false
     img_link: # Image link for the payment QR code
     text: # Custom reward text, Can be null
 
@@ -171,7 +171,7 @@ toc:
   enable: true # Option values: true | false
 
   # Automatically add list number to toc
-  number: false # Option values: true | false
+  number: true # Option values: true | false
 
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: true # Option values: true | false
@@ -189,7 +189,7 @@ website_count:
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
-    enable: false # Option values: true | false
+    enable: true # Option values: true | false
     site_uv: true # Option values: true | false
     site_pv: true # Option values: true | false
     page_pv: true # Option values: true | false
@@ -280,7 +280,7 @@ rss:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/lazyload.html
 # ---------------------------------------------------------------------------------------
 lazyload:
-  enable: false # Option values: true | false
+  enable: true # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/cdn.html
@@ -293,7 +293,7 @@ cdn:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/pjax.html
 # ---------------------------------------------------------------------------------------
 pjax:
-  enable: false # Option values: true | false
+  enable: true # Option values: true | false
 
 # ---------------------------------------------------------------------------------------
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/footer.html
@@ -304,7 +304,7 @@ footer:
 
   site_deploy:
     enable: true # Option values: true | false
-    provider: github # Option values: github | vercel | netlify | cloudflare | gitee | aliyun | tencent_cloud | upyun
+    provider: netlify # Option values: github | vercel | netlify | cloudflare | gitee | aliyun | tencent_cloud | upyun
     url: # Your deployment provider url, Can be null
 
   record:
