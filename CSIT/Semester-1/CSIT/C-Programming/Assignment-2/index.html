@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Questions for Assignment 2 on Computer Fundamentals, Memory Hierarchy, Operating Systems, and IoT">
+    <meta name="author" content="Llyr">
+    <script defer src="/_vercel/insights/script.js"></script>
+    
+    <title>
+        
+            C Programming Assignment 2 |
+        
+        CSIT 101
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.png">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+        
+            
+        
+            
+                
+<link rel="stylesheet" href="/css/custom-1.css">
+
+            
+        
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"csit101.netlify.app","root":"/","language":"en","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#a67eb7","title":"CSIT 101","author":"Llyr","avatar":"/images/user.png","logo":"/images/logo.png","favicon":"/images/logo.png"},"menu":{"home":"/ || fa-solid fa-home","archives":"/archives || fa-solid fa-box-archive","tags":"/tags || fa-solid fa-tags","categories":"/categories || fa-solid fa-layer-group","tools":"/tools || fa-solid fa-tools","about":"/about || fa-solid fa-user-graduate"},"first_screen":{"enable":true,"background_img":null,"background_img_dark":null,"description":"Notes for you, by us! :D","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/Llyr4472","bilibili":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":"contact@prashantgiri360.com.np"}},"scroll":{"progress_bar":true,"percent":true,"hide_header":false},"home":{"announcement":null,"category":true,"tag":true,"post_datetime":"created","post_datetime_format":"YYYY-MM-DD"},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD","copyright_info":true,"share":false,"reward":{"enable":false,"img_link":null,"text":null},"img_align":"center"},"code_block":{"tools":{"enable":true,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":true,"site_pv":true,"page_pv":true}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2024,"word_count":true,"site_deploy":{"enable":true,"provider":"netlify","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":true,"css":[null,"/css/custom-1.css"],"js":[null]},"root":"","source_data":{"tools":[{"category":"Tools","anchorId":"VG9vbHM0"},{"name":"Chatgpt","link":"https://chat.openai.com","description":"ChatGPT is a large language model trained by OpenAI. It is capable of understanding natural language and generating responses that are coherent and relevant to the input.","icon":"/images/tools/openai.png"},{"name":"Desmos","link":"https://www.desmos.com","description":"Desmos is a digital calculator tool that allows users to create graphs, tables, and more.","icon":"/images/tools/desmos.jpg"}]},"version":"4.2.5"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.png">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               CSIT 101
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-home"></i>
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tags"></i>
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/categories">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                
+                                CATEGORIES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-tools"></i>
+                                
+                                TOOLS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/about">
+                                
+                                    <i class="menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                
+                                ABOUT
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="menu-text-color fas search fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-home"></i>
+                                </span>
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-box-archive"></i>
+                                </span>
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tags"></i>
+                                </span>
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/categories">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-layer-group"></i>
+                                </span>
+                            
+                            CATEGORIES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-tools"></i>
+                                </span>
+                            
+                            TOOLS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/about">
+                            
+                                <span class="menu-icon-wrap border-box flex-center">
+                                    <i class="drawer-menu-text-color menu-icon fa-solid fa-user-graduate"></i>
+                                </span>
+                            
+                            ABOUT
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        C Programming Assignment 2
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/user.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Llyr</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-12-11</span>
+            </span>
+
+            
+                <span class="meta-info-item post-update-date">
+                    <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                    <span class="datetime" data-updated="Wed Dec 11 2024 04:44:29 GMT+0545">2024-12-11</span>
+                </span>
+            
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/CSIT/">CSIT</a></li>
+                        
+                    
+                            <li class="category-item">&nbsp;<i class="icon fas fa-angle-right"></i>&nbsp;<a href="/categories/CSIT/Semester-1/">Semester 1</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/C-Programming/">C Programming</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/Assignment/">Assignment</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="Assignment-2"><a href="#Assignment-2" class="headerlink" title="Assignment 2"></a>Assignment 2</h1><h2 id="1-Explain-types-of-computers-on-the-basis-of-their-size-or-capacity"><a href="#1-Explain-types-of-computers-on-the-basis-of-their-size-or-capacity" class="headerlink" title="1.Explain types of computers on the basis of their size or capacity."></a>1.Explain types of computers on the basis of their size or capacity.</h2><p><strong>Answer:</strong><br>   Computer systems can be classified into several categories based on their size, processing power, and capacity:</p>
+<ul>
+<li><p><strong>Microcomputers</strong>:</p>
+<ul>
+<li>Smallest category of computers</li>
+<li>Typically personal computers (PCs) and laptops</li>
+<li>Use microprocessors as their central processing unit</li>
+<li>Designed for individual use in homes, offices, and educational institutions</li>
+<li>Examples: Desktop computers, laptops, smartphones, tablets</li>
+</ul>
+</li>
+<li><p><strong>Minicomputers</strong>:</p>
+<ul>
+<li>Medium-sized computers, larger than microcomputers but smaller than mainframes</li>
+<li>Can support multiple users simultaneously</li>
+<li>Often used in small to medium-sized businesses</li>
+<li>Commonly employed in scientific research, engineering, and data processing</li>
+<li>Examples: Digital Equipment Corporation (DEC) PDP series, IBM System&#x2F;3</li>
+</ul>
+</li>
+<li><p><strong>Mainframe Computers</strong>:</p>
+<ul>
+<li>Large, powerful computers capable of processing massive amounts of data</li>
+<li>Support numerous simultaneous users and complex computational tasks</li>
+<li>Primarily used by large organizations for critical applications</li>
+<li>High reliability, extensive data storage, and advanced security features</li>
+<li>Examples: IBM z15, Fujitsu GS21 mainframe series</li>
+<li>Common in banking, insurance, government, and large corporate environments</li>
+</ul>
+</li>
+<li><p><strong>Supercomputers</strong>:</p>
+<ul>
+<li>Most powerful and fastest computers available</li>
+<li>Designed for extremely complex and data-intensive computational tasks</li>
+<li>Used in scientific research, weather forecasting, climate modeling, and advanced simulations</li>
+<li>Extremely expensive and occupy large physical spaces</li>
+<li>Consist of thousands of interconnected processors</li>
+<li>Examples: IBM Summit, Fugaku (Japan), Frontier at Oak Ridge National Laboratory</li>
+</ul>
+</li>
+</ul>
+<h2 id="2-Describe-the-different-generations-of-computers-till-today-with-their-technology-and-examples"><a href="#2-Describe-the-different-generations-of-computers-till-today-with-their-technology-and-examples" class="headerlink" title="2. Describe the different generations of computers till today with their technology and examples."></a>2. Describe the different generations of computers till today with their technology and examples.</h2><p>   <strong>Answer:</strong></p>
+<ol>
+<li><p><strong>First Generation (1940-1956)</strong>:</p>
+<ul>
+<li>Technology: Vacuum Tubes</li>
+<li>Characteristics:<ul>
+<li>Large, room-sized machines</li>
+<li>Generated significant heat</li>
+<li>Used punch cards for input</li>
+<li>Limited programming capabilities</li>
+</ul>
+</li>
+<li>Examples: ENIAC, UNIVAC I</li>
+<li>Programming: Machine language only</li>
+</ul>
+</li>
+<li><p><strong>Second Generation (1956-1963)</strong>:</p>
+<ul>
+<li>Technology: Transistors</li>
+<li>Characteristics:<ul>
+<li>Smaller and more reliable compared to first-generation computers</li>
+<li>Generated less heat</li>
+<li>Used magnetic core memory</li>
+<li>Introduced high-level programming languages</li>
+</ul>
+</li>
+<li>Examples: IBM 1401, CDC 3600</li>
+<li>Programming: FORTRAN, COBOL introduced</li>
+</ul>
+</li>
+<li><p><strong>Third Generation (1964-1971)</strong>:</p>
+<ul>
+<li>Technology: Integrated Circuits (ICs)</li>
+<li>Characteristics:<ul>
+<li>Significant reduction in computer size</li>
+<li>Improved processing speed</li>
+<li>Multiple programs could run simultaneously</li>
+<li>Development of operating systems</li>
+</ul>
+</li>
+<li>Examples: IBM System&#x2F;360, PDP-8</li>
+<li>Programming: BASIC, advanced FORTRAN versions</li>
+</ul>
+</li>
+<li><p><strong>Fourth Generation (1971-Present)</strong>:</p>
+<ul>
+<li>Technology: Microprocessors</li>
+<li>Characteristics:<ul>
+<li>Personal computers emerged</li>
+<li>Graphical User Interfaces (GUIs)</li>
+<li>Networking and internet capabilities</li>
+<li>Reduced cost and increased accessibility</li>
+</ul>
+</li>
+<li>Examples: Apple Macintosh, IBM PC, Intel processors</li>
+<li>Programming: Object-oriented languages, web programming</li>
+</ul>
+</li>
+<li><p><strong>Fifth Generation (Present and Future)</strong>:</p>
+<ul>
+<li>Technology: Artificial Intelligence, Quantum Computing</li>
+<li>Characteristics:<ul>
+<li>Advanced AI and machine learning</li>
+<li>Natural language processing</li>
+<li>Self-learning systems</li>
+<li>Quantum computing research</li>
+</ul>
+</li>
+<li>Examples: IBM Watson, Google’s AI systems</li>
+<li>Focus: Intelligent systems, neural networks</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-Differentiate-analog-and-digital-computers-with-examples"><a href="#3-Differentiate-analog-and-digital-computers-with-examples" class="headerlink" title="3. Differentiate analog and digital computers with examples."></a>3. Differentiate analog and digital computers with examples.</h2><p>   <strong>Answer:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Analog Computers</strong></th>
+<th><strong>Digital Computers</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Representation</strong></td>
+<td>Continuous physical quantities, such as voltage or mechanical motion</td>
+<td>Discrete binary values (0s and 1s)</td>
+</tr>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>Provides approximate results, less precise</td>
+<td>Provides exact, precise results</td>
+</tr>
+<tr>
+<td><strong>Flexibility</strong></td>
+<td>Limited in functionality, designed for specific tasks</td>
+<td>Highly flexible and programmable, capable of a wide range of applications</td>
+</tr>
+<tr>
+<td><strong>Processing Method</strong></td>
+<td>Solves problems by measuring continuous physical quantities</td>
+<td>Performs mathematical computations based on binary logic</td>
+</tr>
+<tr>
+<td><strong>Data Representation</strong></td>
+<td>Data is represented by continuously variable physical quantities (e.g., voltage)</td>
+<td>Data is represented by binary digits (bits)</td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td>Mechanical speedometers, thermometers, slide rules, early scientific devices</td>
+<td>Personal computers, smartphones, laptops, modern electronic devices</td>
+</tr>
+<tr>
+<td><strong>Applications</strong></td>
+<td>Used for specific problems like simulations, weather forecasting, and real-time control</td>
+<td>Used for general-purpose computing, business, scientific applications, and entertainment</td>
+</tr>
+<tr>
+<td><strong>System Complexity</strong></td>
+<td>Simple, dedicated to specific tasks, less complex hardware</td>
+<td>Complex, capable of handling diverse tasks with general-purpose hardware</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Provides real-time solutions, but less accurate and limited in scope</td>
+<td>Can perform complex, precise calculations but with some time delays</td>
+</tr>
+</tbody></table>
+<h2 id="4-What-is-a-computer-system-Explain-the-major-building-blocks-of-a-digital-computer-with-a-block-diagram"><a href="#4-What-is-a-computer-system-Explain-the-major-building-blocks-of-a-digital-computer-with-a-block-diagram" class="headerlink" title="4. What is a computer system? Explain the major building blocks of a digital computer with a block diagram."></a>4. What is a computer system? Explain the major building blocks of a digital computer with a block diagram.</h2><p>   <strong>Answer:</strong><br>   A computer system is an integrated electronic device that can receive, process, store, and output information. It consists of interconnected hardware and software components working together to perform computational tasks.</p>
+<p>   <strong>Major Building Blocks of a Digital Computer</strong>:</p>
+<ol>
+<li><p><strong>Input Unit</strong>:</p>
+<ul>
+<li>Receives raw data from external sources</li>
+<li>Converts input into a format the computer can understand</li>
+<li>Examples: Keyboard, mouse, scanner, microphone</li>
+<li>Translates human-readable input into machine-readable format</li>
+</ul>
+</li>
+<li><p><strong>Central Processing Unit (CPU)</strong>:</p>
+<ul>
+<li>The “brain” of the computer</li>
+<li>Performs arithmetic and logical operations</li>
+<li>Executes instructions from memory</li>
+<li>Consists of:<ul>
+<li>Control Unit: Manages and coordinates computer operations</li>
+<li>Arithmetic Logic Unit (ALU): Performs mathematical and logical computations</li>
+<li>Registers: Small, fast storage locations within the CPU</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Memory Unit</strong>:</p>
+<ul>
+<li>Stores data and instructions temporarily</li>
+<li>Two main types:<ul>
+<li>Primary Memory (RAM): Volatile, fast access</li>
+<li>Secondary Memory: Non-volatile, permanent storage</li>
+</ul>
+</li>
+<li>Provides quick data access for the CPU</li>
+<li>Determines computer’s processing speed and multitasking capabilities</li>
+</ul>
+</li>
+<li><p><strong>Output Unit</strong>:</p>
+<ul>
+<li>Presents processed information to the user</li>
+<li>Converts machine-readable data into human-readable format</li>
+<li>Examples: Monitor, printer, speakers</li>
+<li>Provides results of computer processing</li>
+</ul>
+</li>
+<li><p><strong>Storage Unit</strong>:</p>
+<ul>
+<li>Stores data permanently or semi-permanently</li>
+<li>Types include:<ul>
+<li>Hard Disk Drives (HDD)</li>
+<li>Solid State Drives (SSD)</li>
+<li>Optical drives</li>
+<li>Cloud storage</li>
+</ul>
+</li>
+<li>Retains data even when computer is powered off</li>
+</ul>
+</li>
+</ol>
+<p>   <strong>Block Diagram Representation</strong>:<br>    <img  
+                       lazyload
+                       alt="image"
+                       data-src="/block-diagram.jpg"
+                        alt="Block Diagram of Computer System"
+                 ></p>
+<h2 id="5-What-is-an-instruction-set-Explain-the-instruction-cycle"><a href="#5-What-is-an-instruction-set-Explain-the-instruction-cycle" class="headerlink" title="5. What is an instruction set? Explain the instruction cycle."></a>5. What is an instruction set? Explain the instruction cycle.</h2><p>   <strong>Answer:</strong><br>   An instruction set is a collection of low-level commands that a computer processor can understand and execute. It defines the basic operations a CPU can perform, serving as the fundamental interface between hardware and software.</p>
+<p>   <strong>Components of an Instruction Set</strong>:</p>
+<ul>
+<li>Data manipulation instructions</li>
+<li>Arithmetic operations</li>
+<li>Logical operations</li>
+<li>Control flow instructions</li>
+<li>Input&#x2F;Output operations</li>
+</ul>
+<p>   <strong>Instruction Cycle (Fetch-Decode-Execute Cycle)</strong>:</p>
+<ol>
+<li><p><strong>Fetch Stage</strong>:</p>
+<ul>
+<li>Program Counter (PC) identifies the memory address of the next instruction</li>
+<li>Instruction is retrieved from main memory</li>
+<li>Instruction is loaded into the Instruction Register (IR)</li>
+<li>Program Counter is incremented to point to the next instruction</li>
+</ul>
+</li>
+<li><p><strong>Decode Stage</strong>:</p>
+<ul>
+<li>CPU interprets the instruction’s binary code</li>
+<li>Determines the operation to be performed</li>
+<li>Identifies:<ul>
+<li>Operation type</li>
+<li>Memory locations</li>
+<li>Registers involved</li>
+<li>Data to be processed</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Execute Stage</strong>:</p>
+<ul>
+<li>Actual execution of the decoded instruction</li>
+<li>Performs specified operation:<ul>
+<li>Arithmetic calculations</li>
+<li>Logical comparisons</li>
+<li>Data movement</li>
+<li>Control flow modifications</li>
+</ul>
+</li>
+<li>Stores results in appropriate registers or memory locations</li>
+</ul>
+</li>
+</ol>
+<p>   <strong>Cycle Illustration</strong>:<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Fetch Instruction] → [Decode Instruction] → [Execute Instruction]</span><br><span class="line">      ↑                                           ↓</span><br><span class="line">      └───────────Program Counter Update──────────┘</span><br></pre></td></tr></table></figure></p>
+<h2 id="6-Draw-a-pyramid-structure-of-the-memory-hierarchy-and-explain-each-level"><a href="#6-Draw-a-pyramid-structure-of-the-memory-hierarchy-and-explain-each-level" class="headerlink" title="6. Draw a pyramid structure of the memory hierarchy and explain each level."></a>6. Draw a pyramid structure of the memory hierarchy and explain each level.</h2><p>   <strong>Answer:</strong></p>
+<p>   <strong>Memory Hierarchy Pyramid</strong>:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">       Registers</span><br><span class="line">          / \</span><br><span class="line">         /   \</span><br><span class="line">        /Cache\</span><br><span class="line">       /       \</span><br><span class="line">      /   RAM   \</span><br><span class="line">     /           \</span><br><span class="line">    /  Secondary  \</span><br><span class="line">   /    Storage    \</span><br><span class="line">  /                 \</span><br><span class="line"> / Tertiary Storage  \</span><br><span class="line">/_____________________\</span><br></pre></td></tr></table></figure>
+
+<p>   <strong>Detailed Explanation of Memory Hierarchy</strong>:</p>
+<ol>
+<li><p><strong>Registers</strong>:</p>
+<ul>
+<li>Fastest but smallest memory</li>
+<li>Located directly within the CPU</li>
+<li>Extremely limited storage capacity (bytes)</li>
+<li>Used for immediate data processing</li>
+<li>Extremely high speed, zero access time</li>
+<li>Stores:<ul>
+<li>Data being processed</li>
+<li>Memory addresses</li>
+<li>Intermediate computational results</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Cache Memory</strong>:</p>
+<ul>
+<li>Levels: L1, L2, L3 (increasing size, decreasing speed)</li>
+<li>L1 Cache:<ul>
+<li>Smallest (32-64 KB)</li>
+<li>Fastest access time</li>
+<li>Directly integrated into CPU</li>
+<li>Stores most frequently used instructions and data</li>
+</ul>
+</li>
+<li>L2 Cache:<ul>
+<li>Larger capacity (256 KB - 8 MB)</li>
+<li>Slightly slower than L1</li>
+<li>Often shared between CPU cores</li>
+</ul>
+</li>
+<li>L3 Cache:<ul>
+<li>Largest cache memory (up to 50 MB)</li>
+<li>Shared among all CPU cores</li>
+<li>Slower but provides broader data access</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Random Access Memory (RAM)</strong>:</p>
+<ul>
+<li>Volatile memory</li>
+<li>Stores active programs and data</li>
+<li>Faster access compared to secondary storage</li>
+<li>Types:<ul>
+<li>SRAM (Static RAM)</li>
+<li>DRAM (Dynamic RAM)</li>
+</ul>
+</li>
+<li>Temporary storage during computer operation</li>
+<li>Allows quick read and write operations</li>
+</ul>
+</li>
+<li><p><strong>Secondary Storage</strong>:</p>
+<ul>
+<li>Non-volatile memory</li>
+<li>Permanent data storage</li>
+<li>Large storage capacity</li>
+<li>Slower access compared to RAM</li>
+<li>Types:<ul>
+<li>Hard Disk Drives (HDD)</li>
+<li>Solid State Drives (SSD)</li>
+<li>External storage devices</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Tertiary Storage</strong>:</p>
+<ul>
+<li>Archival and backup storage</li>
+<li>Extremely large capacity</li>
+<li>Slowest access time</li>
+<li>Examples:<ul>
+<li>Tape drives</li>
+<li>Optical storage</li>
+<li>Cloud storage systems</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="7-Differentiate-SRAM-and-DRAM-with-concepts-and-terms"><a href="#7-Differentiate-SRAM-and-DRAM-with-concepts-and-terms" class="headerlink" title="7. Differentiate SRAM and DRAM with concepts and terms."></a>7. Differentiate SRAM and DRAM with concepts and terms.</h2><table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>SRAM</strong></th>
+<th><strong>DRAM</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Speed</strong></td>
+<td>Extremely fast; used in critical applications like CPU caches</td>
+<td>Slower; suitable for applications with less stringent speed requirements</td>
+</tr>
+<tr>
+<td><strong>Cost</strong></td>
+<td>Expensive due to complex manufacturing and use of more transistors</td>
+<td>Cheaper as it uses fewer components per bit</td>
+</tr>
+<tr>
+<td><strong>Density</strong></td>
+<td>Lower density; larger chip size per storage unit</td>
+<td>Higher density; smaller chip size per storage unit</td>
+</tr>
+<tr>
+<td><strong>Power Consumption</strong></td>
+<td>Consumes less power in active and idle states</td>
+<td>Consumes more power due to constant refreshing</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>Complex internal structure; uses 6 transistors per bit</td>
+<td>Simpler structure; uses 1 transistor and 1 capacitor per bit</td>
+</tr>
+<tr>
+<td><strong>Refresh Requirement</strong></td>
+<td>No refresh needed; data is retained as long as power is supplied</td>
+<td>Requires periodic refreshing to maintain data</td>
+</tr>
+<tr>
+<td><strong>Data Retention Stability</strong></td>
+<td>Highly stable; no data loss without power fluctuations</td>
+<td>Less stable; susceptible to data loss without regular refresh cycles</td>
+</tr>
+<tr>
+<td><strong>Access Time</strong></td>
+<td>Very low; enables near-instantaneous data retrieval</td>
+<td>Higher access time compared to SRAM</td>
+</tr>
+<tr>
+<td><strong>Size Limitations</strong></td>
+<td>Smaller sizes, typically in KB to MB range</td>
+<td>Larger sizes, typically in GB range</td>
+</tr>
+<tr>
+<td><strong>Temperature Sensitivity</strong></td>
+<td>Performs consistently across a wide temperature range</td>
+<td>Sensitive to temperature changes affecting capacitor charge levels</td>
+</tr>
+<tr>
+<td><strong>Applications</strong></td>
+<td>Used in CPU caches (L1, L2, L3), embedded systems, and networking devices</td>
+<td>Used as main memory in computers, laptops, and servers</td>
+</tr>
+<tr>
+<td><strong>Longevity</strong></td>
+<td>Longer lifespan due to no constant electrical stress</td>
+<td>Shorter lifespan due to capacitor wear from frequent refreshing</td>
+</tr>
+<tr>
+<td><strong>Manufacturing Process</strong></td>
+<td>Complex, requiring advanced processes for flip-flop circuitry</td>
+<td>Simpler, making it more cost-effective for large-scale production</td>
+</tr>
+</tbody></table>
+<h2 id="8-What-is-a-system-bus-Explain-the-main-components-of-a-computer-cabinet"><a href="#8-What-is-a-system-bus-Explain-the-main-components-of-a-computer-cabinet" class="headerlink" title="8. What is a system bus? Explain the main components of a computer cabinet."></a>8. What is a system bus? Explain the main components of a computer cabinet.</h2><p>   <strong>Answer:</strong><br>   <strong>System Bus</strong>:<br>   A system bus is a communication pathway that transfers data between different computer components. It serves as a communication highway, allowing various hardware components to exchange information and coordinate operations.</p>
+<p>   <strong>Types of System Bus</strong>:</p>
+<ol>
+<li><p><strong>Data Bus</strong>:</p>
+<ul>
+<li>Transfers actual data between components</li>
+<li>Width determines amount of data transferred simultaneously</li>
+<li>Typically 32-bit or 64-bit</li>
+</ul>
+</li>
+<li><p><strong>Address Bus</strong>:</p>
+<ul>
+<li>Specifies memory locations for data transfer</li>
+<li>Determines maximum memory addressable by the system</li>
+</ul>
+</li>
+<li><p><strong>Control Bus</strong>:</p>
+<ul>
+<li>Manages and synchronizes component interactions</li>
+<li>Carries control signals for read&#x2F;write operations</li>
+</ul>
+</li>
+</ol>
+<p>   <strong>Computer Cabinet Components</strong>:</p>
+<ol>
+<li><p><strong>Motherboard</strong>:</p>
+<ul>
+<li>Central circuit board connecting all computer components</li>
+<li>Contains critical interfaces and connection points</li>
+<li>Key components:<ul>
+<li>CPU socket</li>
+<li>RAM slots</li>
+<li>Expansion slots (PCIe)</li>
+<li>Chipset</li>
+<li>BIOS&#x2F;UEFI chip</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Power Supply Unit (PSU)</strong>:</p>
+<ul>
+<li>Converts AC power to DC power</li>
+<li>Provides regulated electrical power to all components</li>
+<li>Ratings:<ul>
+<li>Wattage (total power output)</li>
+<li>Efficiency (80 Plus certification)</li>
+</ul>
+</li>
+<li>Types:<ul>
+<li>Non-modular</li>
+<li>Semi-modular</li>
+<li>Fully modular</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Storage Drives</strong>:</p>
+<ul>
+<li><p><strong>Hard Disk Drive (HDD)</strong>:</p>
+<ul>
+<li>Mechanical storage with spinning platters</li>
+<li>Higher storage capacity</li>
+<li>Lower cost per gigabyte</li>
+<li>Slower read&#x2F;write speeds</li>
+</ul>
+</li>
+<li><p><strong>Solid State Drive (SSD)</strong>:</p>
+<ul>
+<li>No moving parts</li>
+<li>Faster read&#x2F;write speeds</li>
+<li>Lower latency</li>
+<li>More expensive per gigabyte</li>
+<li>Higher reliability</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Cooling Systems</strong>:</p>
+<ul>
+<li><p><strong>Air Cooling</strong>:</p>
+<ul>
+<li>CPU Heatsink and Fan (HSF)</li>
+<li>Case Fans</li>
+<li>Maintains airflow and temperature regulation</li>
+</ul>
+</li>
+<li><p><strong>Liquid Cooling</strong>:</p>
+<ul>
+<li>More efficient heat dissipation</li>
+<li>Quieter operation</li>
+<li>Used in high-performance systems</li>
+<li>Types: All-in-One (AIO) and Custom Loop</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Additional Components</strong>:</p>
+<ul>
+<li>Graphics Card (GPU)</li>
+<li>Network Interface Card (NIC)</li>
+<li>Sound Card</li>
+<li>Optical Drives</li>
+</ul>
+</li>
+</ol>
+<p>   <strong>Cabinet Layout Principle</strong>:<br>   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Motherboard] ↔ [PSU] ↔ [Storage Drives]</span><br><span class="line">      ↓           ↓           ↓</span><br><span class="line">[Cooling System] [Expansion Cards] [Peripheral Connections]</span><br></pre></td></tr></table></figure></p>
+<h2 id="9-What-is-an-operating-system-Explain-the-functions-of-an-operating-system"><a href="#9-What-is-an-operating-system-Explain-the-functions-of-an-operating-system" class="headerlink" title="9. What is an operating system? Explain the functions of an operating system."></a>9. What is an operating system? Explain the functions of an operating system.</h2><p>   <strong>Answer:</strong><br>   An operating system is a complex software that acts as an intermediary between computer hardware and user applications. It manages computer resources, provides a user interface, and enables interaction between software and hardware components.</p>
+<p>   <strong>Primary Functions of an Operating System</strong>:</p>
+<ol>
+<li><p><strong>Process Management</strong>:</p>
+<ul>
+<li>Schedules and controls computer processes</li>
+<li>Allocates CPU time to different tasks</li>
+<li>Manages process creation, execution, and termination</li>
+<li>Implements scheduling algorithms:<ul>
+<li>First-Come-First-Serve (FCFS)</li>
+<li>Round Robin</li>
+<li>Priority Scheduling</li>
+</ul>
+</li>
+<li>Ensures efficient CPU utilization</li>
+<li>Manages process states:<ul>
+<li>New</li>
+<li>Ready</li>
+<li>Running</li>
+<li>Waiting</li>
+<li>Terminated</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Memory Management</strong>:</p>
+<ul>
+<li>Allocates and deallocates memory space</li>
+<li>Tracks memory usage</li>
+<li>Manages memory protection</li>
+<li>Implements memory allocation strategies:<ul>
+<li>Contiguous memory allocation</li>
+<li>Paging</li>
+<li>Segmentation</li>
+</ul>
+</li>
+<li>Virtual memory management</li>
+<li>Prevents memory conflicts</li>
+<li>Optimizes memory usage efficiency</li>
+</ul>
+</li>
+<li><p><strong>File Management</strong>:</p>
+<ul>
+<li>Organizes and controls file system structure</li>
+<li>Creates, reads, writes, and deletes files</li>
+<li>Manages file permissions and access rights</li>
+<li>Provides file organization methods:<ul>
+<li>Hierarchical file system</li>
+<li>Flat file system</li>
+<li>Network file system</li>
+</ul>
+</li>
+<li>Handles file metadata</li>
+<li>Ensures data integrity and security</li>
+</ul>
+</li>
+<li><p><strong>Device Management</strong>:</p>
+<ul>
+<li>Manages input&#x2F;output devices</li>
+<li>Allocates device resources</li>
+<li>Implements device drivers</li>
+<li>Handles device communication</li>
+<li>Manages peripheral connections</li>
+<li>Ensures smooth device interactions</li>
+</ul>
+</li>
+<li><p><strong>User Interface Management</strong>:</p>
+<ul>
+<li>Provides interaction between user and computer</li>
+<li>Supports different interface types:<ul>
+<li>Command-Line Interface (CLI)</li>
+<li>Graphical User Interface (GUI)</li>
+</ul>
+</li>
+<li>Manages user inputs</li>
+<li>Provides system notifications</li>
+<li>Implements user authentication</li>
+</ul>
+</li>
+<li><p><strong>Security and Access Control</strong>:</p>
+<ul>
+<li>Implements user authentication</li>
+<li>Manages user privileges</li>
+<li>Protects system from unauthorized access</li>
+<li>Implements firewall mechanisms</li>
+<li>Manages encryption and data protection</li>
+<li>Prevents malicious activities</li>
+</ul>
+</li>
+<li><p><strong>Network Management</strong>:</p>
+<ul>
+<li>Facilitates network communications</li>
+<li>Manages network protocols</li>
+<li>Handles network connections</li>
+<li>Implements network security</li>
+<li>Manages network resources</li>
+<li>Supports distributed computing</li>
+</ul>
+</li>
+</ol>
+<h2 id="10-Differentiate-time-sharing-and-real-time-operating-systems-with-examples"><a href="#10-Differentiate-time-sharing-and-real-time-operating-systems-with-examples" class="headerlink" title="10. Differentiate time-sharing and real-time operating systems with examples."></a>10. Differentiate time-sharing and real-time operating systems with examples.</h2><p>   <strong>Answer:</strong><br>   Here’s an extended tabular comparison of time-sharing and real-time operating systems:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Time-Sharing OS</strong></th>
+<th><strong>Real-Time OS</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Primary Goal</strong></td>
+<td>Efficient resource sharing among multiple users or tasks</td>
+<td>Ensuring deterministic and predictable timing for critical operations</td>
+</tr>
+<tr>
+<td><strong>User Interaction</strong></td>
+<td>High; allows multiple users to interact with the system simultaneously</td>
+<td>Minimal; often designed for systems without direct user interaction</td>
+</tr>
+<tr>
+<td><strong>Response Time</strong></td>
+<td>Variable; depends on system load and scheduling algorithms</td>
+<td>Guaranteed; response within defined time constraints</td>
+</tr>
+<tr>
+<td><strong>Scheduling</strong></td>
+<td>Focused on fairness and maximizing CPU utilization</td>
+<td>Focused on strict prioritization and timing constraints</td>
+</tr>
+<tr>
+<td><strong>Complexity</strong></td>
+<td>High; includes advanced resource management and CPU scheduling</td>
+<td>Low to moderate; optimized for simplicity and reliability</td>
+</tr>
+<tr>
+<td><strong>Latency</strong></td>
+<td>Higher; tolerates delays in resource access</td>
+<td>Minimal; designed to handle time-sensitive tasks with minimal overhead</td>
+</tr>
+<tr>
+<td><strong>Types of Systems</strong></td>
+<td>Multi-user, interactive systems</td>
+<td>Hard Real-Time (strict deadlines) and Soft Real-Time (flexible deadlines)</td>
+</tr>
+<tr>
+<td><strong>Resource Utilization</strong></td>
+<td>Optimized for fairness and maximizing user satisfaction</td>
+<td>Optimized for predictability and critical task performance</td>
+</tr>
+<tr>
+<td><strong>Applications</strong></td>
+<td>Academic institutions, shared servers, enterprise computing environments</td>
+<td>Embedded systems, industrial controls, medical devices, aerospace systems</td>
+</tr>
+<tr>
+<td><strong>Interrupt Handling</strong></td>
+<td>Moderate; handles interrupts with lower urgency</td>
+<td>Quick and precise; prioritizes interrupt handling to meet timing goals</td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td>Unix, Linux, Multics, early versions of Windows</td>
+<td>VxWorks, QNX, FreeRTOS, Embedded Linux</td>
+</tr>
+<tr>
+<td><strong>System Load Management</strong></td>
+<td>Handles large numbers of concurrent tasks</td>
+<td>Prioritizes fewer, critical tasks</td>
+</tr>
+<tr>
+<td><strong>Typical Environment</strong></td>
+<td>Multi-user, general-purpose systems</td>
+<td>Embedded, mission-critical systems</td>
+</tr>
+</tbody></table>
+<h2 id="11-Differentiate-multiprogramming-and-multitasking-with-examples"><a href="#11-Differentiate-multiprogramming-and-multitasking-with-examples" class="headerlink" title="11. Differentiate multiprogramming and multitasking with examples."></a>11. Differentiate multiprogramming and multitasking with examples.</h2><p>   <strong>Answer:</strong><br>   Here’s the extended comparison for multiprogramming and multitasking:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Multiprogramming</strong></th>
+<th><strong>Multitasking</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>User Interaction</strong></td>
+<td>Minimal; designed for batch processing, with little to no direct user input</td>
+<td>High; enables direct interaction with multiple applications or tasks</td>
+</tr>
+<tr>
+<td><strong>Execution Model</strong></td>
+<td>Background processing; runs multiple programs sequentially when one waits</td>
+<td>Interactive execution; multiple tasks run concurrently, giving the illusion of simultaneous execution</td>
+</tr>
+<tr>
+<td><strong>CPU Switching</strong></td>
+<td>Based on I&#x2F;O operations; CPU switches between programs when one is blocked</td>
+<td>Time-sliced; CPU allocates time to each task, switching between them regularly</td>
+</tr>
+<tr>
+<td><strong>Memory Management</strong></td>
+<td>Static memory allocation; programs are loaded into memory and reside there until completion</td>
+<td>Dynamic memory allocation; memory is allocated and freed based on task requirements</td>
+</tr>
+<tr>
+<td><strong>User Perception</strong></td>
+<td>Batch processing model; users don’t interact with tasks while they are executing</td>
+<td>Simultaneous execution of tasks, offering users a more responsive experience</td>
+</tr>
+<tr>
+<td><strong>Task Scheduling</strong></td>
+<td>Focuses on process scheduling for efficient CPU utilization, with context switching based on I&#x2F;O wait times</td>
+<td>Uses time-sharing to allocate CPU time to tasks, often with preemptive or cooperative multitasking</td>
+</tr>
+<tr>
+<td><strong>System Complexity</strong></td>
+<td>Lower complexity; relies on efficient process scheduling and memory management</td>
+<td>Higher complexity; involves task prioritization, time slices, and inter-process communication</td>
+</tr>
+<tr>
+<td><strong>Examples</strong></td>
+<td>Early mainframe computers, batch processing, server-side background processing</td>
+<td>Modern OS (Windows, macOS, Linux), smartphone operating systems, desktop systems</td>
+</tr>
+<tr>
+<td><strong>Advantages</strong></td>
+<td>Improved CPU utilization, increased throughput, reduced idle time</td>
+<td>Enhanced user experience, improved responsiveness, supports complex workflows</td>
+</tr>
+</tbody></table>
+<h2 id="12-What-is-the-Internet-of-Things-IoT-Explain-the-features-of-IoT"><a href="#12-What-is-the-Internet-of-Things-IoT-Explain-the-features-of-IoT" class="headerlink" title="12. What is the Internet of Things (IoT)? Explain the features of IoT."></a>12. What is the Internet of Things (IoT)? Explain the features of IoT.</h2><p>   <strong>Answer:</strong><br>   IoT is a network of interconnected physical devices, vehicles, home appliances, and other items embedded with electronics, software, sensors, and network connectivity, enabling these objects to collect and exchange data.</p>
+<p>   <strong>Key Features of IoT</strong>:</p>
+<ol>
+<li><p><strong>Connectivity</strong>:</p>
+<ul>
+<li>Seamless communication between devices</li>
+<li>Multiple communication protocols:</li>
+</ul>
+<ul>
+<li>Wi-Fi</li>
+<li>Bluetooth</li>
+<li>Zigbee</li>
+<li>5G</li>
+</ul>
+<ul>
+<li>Enables real-time data transmission</li>
+<li>Supports diverse network architectures</li>
+</ul>
+</li>
+<li><p><strong>Scalability</strong>:</p>
+<ul>
+<li>Ability to expand network infrastructure</li>
+<li>Supports increasing number of connected devices</li>
+<li>Flexible architecture</li>
+<li>Adaptable to various implementation scales:</li>
+</ul>
+<ul>
+<li>Personal networks</li>
+<li>Industrial systems</li>
+<li>Smart cities</li>
+</ul>
+</li>
+<li><p><strong>Real-Time Analytics</strong>:</p>
+<ul>
+<li>Instant data processing</li>
+<li>Immediate insights generation</li>
+<li>Machine learning integration</li>
+<li>Predictive maintenance capabilities</li>
+<li>Supports decision-making processes</li>
+</ul>
+</li>
+<li><p><strong>Interoperability</strong>:</p>
+<ul>
+<li>Devices from different manufacturers can communicate</li>
+<li>Standard communication protocols</li>
+<li>Seamless data exchange</li>
+<li>Supports heterogeneous device ecosystems</li>
+</ul>
+</li>
+<li><p><strong>Sensor Technology</strong>:</p>
+<ul>
+<li>Advanced sensing capabilities</li>
+<li>Diverse sensor types:</li>
+</ul>
+<ul>
+<li>Temperature</li>
+<li>Pressure</li>
+<li>Motion</li>
+<li>Humidity</li>
+</ul>
+<ul>
+<li>High precision measurements</li>
+<li>Low power consumption</li>
+</ul>
+</li>
+<li><p><strong>Security</strong>:</p>
+<ul>
+<li>Encryption mechanisms</li>
+<li>Authentication protocols</li>
+<li>Secure data transmission</li>
+<li>Privacy protection</li>
+<li>Threat detection systems</li>
+</ul>
+</li>
+</ol>
+<p><em>This content is for educational purposes only. The content is provided to help understand the topic and should not be copied or directly reproduced. I do not encourage or support academic dishonesty, and any form of plagiarism is discouraged.</em></p>
+<p><a href="/downloads/CSIT/C-Programming/Assignment-2.pdf">Download Questions</a></p>
+
+                    
+                </div>
+
+                
+                        
+<div class="post-copyright-info-container border-box">
+    <div class="copyright-info-content border-box">
+        <div class="copyright-info-top border-box">
+            <div class="copyright-post-title border-box text-ellipsis">
+                C Programming Assignment 2
+            </div>
+
+            <div class="copyright-post-link border-box text-ellipsis">
+                CSIT/Semester-1/CSIT/C-Programming/Assignment-2/
+            </div>
+        </div>
+
+        <div class="copyright-info-bottom border-box">
+            <div class="copyright-post-author bottom-item">
+                <div class="type">
+                    Author
+                </div>
+                <div class="content">Llyr</div>
+            </div>
+
+            <div class="post-time bottom-item">
+                <div class="type">
+                    Published
+                </div>
+                <div class="content">2024-12-11 05:45</div>
+            </div>
+
+
+            <div class="post-license bottom-item">
+                <div class="type">
+                    License
+                </div>
+                <div class="content tooltip" data-tooltip-content="CC BY-NC-SA 4.0">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed" target="_blank">
+                        
+                            <i class="fa-brands fa-creative-commons"></i>
+                            <i class="fa-brands fa-creative-commons-by"></i>
+                            <i class="fa-brands fa-creative-commons-nc"></i>
+                            <i class="fa-brands fa-creative-commons-sa"></i>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <i class="copyright-bg fa-solid fa-copyright"></i>
+    </div>
+    <div class="copy-copyright-info flex-center tooltip" data-tooltip-content="Copy copyright info" data-tooltip-offset-y="-2px">
+        <i class="fa-solid fa-copy"></i>
+    </div>
+</div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/C-Programming/">C Programming</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/Assignment/">Assignment</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/CSIT/Semester-1/CSIT/C-Programming/Assignment/"
+                                   title="C-Programming Lab Assignment 1"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">C-Programming Lab Assignment 1</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+            <div class="pc-post-toc right-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Assignment-2"><span class="nav-text">Assignment 2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Explain-types-of-computers-on-the-basis-of-their-size-or-capacity"><span class="nav-text">1.Explain types of computers on the basis of their size or capacity.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Describe-the-different-generations-of-computers-till-today-with-their-technology-and-examples"><span class="nav-text">2. Describe the different generations of computers till today with their technology and examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Differentiate-analog-and-digital-computers-with-examples"><span class="nav-text">3. Differentiate analog and digital computers with examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-What-is-a-computer-system-Explain-the-major-building-blocks-of-a-digital-computer-with-a-block-diagram"><span class="nav-text">4. What is a computer system? Explain the major building blocks of a digital computer with a block diagram.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-What-is-an-instruction-set-Explain-the-instruction-cycle"><span class="nav-text">5. What is an instruction set? Explain the instruction cycle.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Draw-a-pyramid-structure-of-the-memory-hierarchy-and-explain-each-level"><span class="nav-text">6. Draw a pyramid structure of the memory hierarchy and explain each level.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Differentiate-SRAM-and-DRAM-with-concepts-and-terms"><span class="nav-text">7. Differentiate SRAM and DRAM with concepts and terms.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-What-is-a-system-bus-Explain-the-main-components-of-a-computer-cabinet"><span class="nav-text">8. What is a system bus? Explain the main components of a computer cabinet.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-What-is-an-operating-system-Explain-the-functions-of-an-operating-system"><span class="nav-text">9. What is an operating system? Explain the functions of an operating system.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-Differentiate-time-sharing-and-real-time-operating-systems-with-examples"><span class="nav-text">10. Differentiate time-sharing and real-time operating systems with examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-Differentiate-multiprogramming-and-multitasking-with-examples"><span class="nav-text">11. Differentiate multiprogramming and multitasking with examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-What-is-the-Internet-of-Things-IoT-Explain-the-features-of-IoT"><span class="nav-text">12. What is the Internet of Things (IoT)? Explain the features of IoT.</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+    &copy;&nbsp;2024
+    
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Llyr</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+        
+        <div class="deploy-info info-item">
+            
+            This site is deployed on <span class="tooltip" data-tooltip-content="Netlify"><img src="/images/brands/netlify.png"></span>
+            
+        </div>
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+                <span class="count-item border-box uv">
+                    <span class="item-type border-box">Unique Visitor</span>
+                    <span class="item-value border-box uv" id="busuanzi_value_site_uv"></span>
+                </span>
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+            <li class="tools-item tool-toggle-theme-mode flex-center">
+                <i class="fas fa-moon"></i>
+            </li>
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+            <li class="tools-item toggle-show-toc-tablet flex-center">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <!-- tablet toc -->
+    
+        <div class="tablet-post-toc-mask">
+            <div class="tablet-post-toc">
+                <div class="post-toc-wrap border-box">
+    <div class="post-toc border-box">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Assignment-2"><span class="nav-text">Assignment 2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Explain-types-of-computers-on-the-basis-of-their-size-or-capacity"><span class="nav-text">1.Explain types of computers on the basis of their size or capacity.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Describe-the-different-generations-of-computers-till-today-with-their-technology-and-examples"><span class="nav-text">2. Describe the different generations of computers till today with their technology and examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Differentiate-analog-and-digital-computers-with-examples"><span class="nav-text">3. Differentiate analog and digital computers with examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-What-is-a-computer-system-Explain-the-major-building-blocks-of-a-digital-computer-with-a-block-diagram"><span class="nav-text">4. What is a computer system? Explain the major building blocks of a digital computer with a block diagram.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-What-is-an-instruction-set-Explain-the-instruction-cycle"><span class="nav-text">5. What is an instruction set? Explain the instruction cycle.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Draw-a-pyramid-structure-of-the-memory-hierarchy-and-explain-each-level"><span class="nav-text">6. Draw a pyramid structure of the memory hierarchy and explain each level.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-Differentiate-SRAM-and-DRAM-with-concepts-and-terms"><span class="nav-text">7. Differentiate SRAM and DRAM with concepts and terms.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-What-is-a-system-bus-Explain-the-main-components-of-a-computer-cabinet"><span class="nav-text">8. What is a system bus? Explain the main components of a computer cabinet.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-What-is-an-operating-system-Explain-the-functions-of-an-operating-system"><span class="nav-text">9. What is an operating system? Explain the functions of an operating system.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-Differentiate-time-sharing-and-real-time-operating-systems-with-examples"><span class="nav-text">10. Differentiate time-sharing and real-time operating systems with examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-Differentiate-multiprogramming-and-multitasking-with-examples"><span class="nav-text">11. Differentiate multiprogramming and multitasking with examples.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-What-is-the-Internet-of-Things-IoT-Explain-the-features-of-IoT"><span class="nav-text">12. What is the Internet of Things (IoT)? Explain the features of IoT.</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+<!-- lazyload -->
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="pjax">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+            
+<script src="/js/post/toc.js"></script>
+
+        
+
+        <!-- copyright-info -->
+        
+            
+<script src="/js/post/copyright-info.js"></script>
+
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart()
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd()
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
+            KEEP.initExecute()
+        });
+    });
+</script>
+
+
+
+
+    
+        
+    
+
+</body>
+</html>
