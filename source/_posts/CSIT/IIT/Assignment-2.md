@@ -1,10 +1,10 @@
 ---
-title: "C Programming Assignment 2"
+title: "IIT Assignment 2"
 date: "2024-12-11"
 description: "Questions for Assignment 2 on Computer Fundamentals, Memory Hierarchy, Operating Systems, and IoT"
 tags:
   - Assignment
-  - C Programming
+  - IIT
 categories:
   - CSIT
   - Semester 1
@@ -566,4 +566,4 @@ categories:
 
 _This content is for educational purposes only. The content is provided to help understand the topic and should not be copied or directly reproduced. I do not encourage or support academic dishonesty, and any form of plagiarism is discouraged._
 
-[Download Questions](/downloads/CSIT/C-Programming/Assignment-2.pdf)
+[Download Questions](/downloads/CSIT/IIT/Assignment-2.pdf)
