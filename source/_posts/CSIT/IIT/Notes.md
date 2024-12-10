@@ -1,6 +1,7 @@
 ---
 title: IIT Notes - CSIT Semester 1
-date: 2024-12-01
+date: 2024-12-
+updated: 2024-12-11
 description: Study materials and notes compiled by SKM for Introduction to Information Technology.
 tags:
   - IIT
@@ -70,6 +71,21 @@ In [Input and Output Devices](/downloads/CSIT/Sem1/IIT/Unit-4.pdf), we explore t
 This unit covers all major input and output devices used in computers, including keyboards, mice, monitors, printers, and scanners. It discusses how each device communicates with the computer system and its role in data processing.
 
 ---
+
+## Unit 6: Computer Software
+[Input and Output Devices](/downloads/CSIT/Sem1/IIT/Unit-6.pdf) introduces the different types of software that make computers functional. You can view the full PDF below:
+
+<iframe 
+    src="/dowwnloads/CSIT/Sem1/IIT/Unit-6.pdf" 
+    width="100%" 
+    height="600px">
+</iframe>
+
+**Description**:  
+This unit covers the two main types of computer software: system software (like operating systems) and application software (like word processors, browsers, and games). It explains the role of software in making hardware usable and facilitating user tasks.
+
+---
+
 <!---
 ## Unit 5: Data Representation
 **Unit 5: Data Representation** explores how data is represented inside a computer system. You can view the full PDF below:
@@ -82,20 +98,6 @@ This unit covers all major input and output devices used in computers, including
 
 **Description**:  
 This unit focuses on how data is represented in binary form within a computer system. It explains concepts like binary numbers, ASCII encoding, and how computers process different types of data such as text, images, and audio.
-
----
-
-## Unit 6: Computer Software
-**Unit 6: Computer Software** introduces the different types of software that make computers functional. You can view the full PDF below:
-
-<iframe 
-    src="Unit-6.pdf" 
-    width="100%" 
-    height="600px">
-</iframe>
-
-**Description**:  
-This unit covers the two main types of computer software: system software (like operating systems) and application software (like word processors, browsers, and games). It explains the role of software in making hardware usable and facilitating user tasks.
 
 ---
 

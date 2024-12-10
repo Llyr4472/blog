@@ -1,6 +1,7 @@
 ---
 title: Digital Logic Notes - CSIT Semester 1
-date: 2024-12-05
+date: 2024-12-05 
+updated: 2024-12-11
 description: Study materials and notes for Digital Logic, including Digital Signals and Waveforms, and Boolean Algebra and Logic Gates.
 tags:
   - CSIT
@@ -17,26 +18,41 @@ categories:
 # Digital Logic Notes - CSIT Semester 1
 
 ## Unit 1: Digital Signals and Waveforms
-Here are the notes for **[Digital Signals and Waveforms](/downloads/CSIT/Sem1/Digital-Logic/Unit-1.pdf)**, compiled by **Er. Sachita Nand Mishra**. This unit introduces digital signals and their characteristics. You can view the full PDF below:
 
-<iframe 
-    src="/downloads/CSIT/Sem1/Digital-Logic/Unit-1.pdf" 
-    width="100%" 
+  ### By Er. Sachita Nand Mishra:
+  <iframe 
+      src="/downloads/CSIT/Sem1/Digital-Logic/Unit-1.pdf" 
+      width="100%" 
+      height="600px">
+  </iframe>
+
+  ### By JPC:
+  <iframe
+    src="/downloads/CSIT/Sem1/Digital-Logic/Unit-1-JPC.pdf"
+    width="100%"
     height="600px">
-</iframe>
+  </iframe>
 
-**Description**:  
-This unit focuses on understanding digital signals and waveforms, including their characteristics, advantages, and examples like square, triangular, and sinusoidal waveforms.
+  **Description**:  
+  This unit focuses on understanding digital signals and waveforms, including their characteristics, advantages, and examples like square, triangular, and sinusoidal waveforms.
 
 ---
 
 ## Unit 2: Boolean Algebra and Logic Gates
-Here are the notes for **[Boolean Algebra and Logic Gates](/downloads/CSIT/Sem1/Digital-Logic/Unit-2.pdf)**, compiled by **Er. Sachita Nand Mishra**. This unit explores Boolean algebra and the fundamental logic gates used in digital circuits. You can view the full PDF below:
+### By Er. Sachita Nand Mishra
 
 <iframe 
     src="/downloads/CSIT/Sem1/Digital-Logic/Unit-2.pdf" 
     width="100%" 
     height="600px">
+</iframe>
+
+### By JPC.
+
+<iframe
+  src="/downloads/CSIT/Sem1/Digital-Logic/Unit-2-JPC.pdf"
+  width="100%"
+  height="600px">
 </iframe>
 
 **Description**:  
