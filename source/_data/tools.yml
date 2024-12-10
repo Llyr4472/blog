@@ -10,3 +10,7 @@
   description: Desmos is a digital calculator tool that allows users to create graphs, tables, and more.
   icon: "/images/tools/desmos.jpg"
 
+- name: Ryne AI
+  link: https://ryne.ai
+  description: Ryne AI is a study buddy that helps with humanizing & generating academic content/essays.
+  icon: "/images/tools/ryne.jpg"
