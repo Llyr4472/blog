@@ -163,7 +163,7 @@ categories:
       * Retains data even when computer is powered off
 
    **Block Diagram Representation**:
-    ![Block Diagram of Computer System](block-diagram.jpg)
+    ![Block Diagram of Computer System](/downloads/CSIT/Sem1/IIT/block-diagram.jpg)
     
 
 ## 5. What is an instruction set? Explain the instruction cycle.  
@@ -566,4 +566,4 @@ categories:
 
 _This content is for educational purposes only. The content is provided to help understand the topic and should not be copied or directly reproduced. I do not encourage or support academic dishonesty, and any form of plagiarism is discouraged._
 
-[Download Questions](/downloads/CSIT/IIT/Assignment-2.pdf)
+[Download Questions](/downloads/CSIT/Sem1/IIT/Assignment-2.pdf)
