@@ -1,7 +1,6 @@
 ---
 title: C Programming Notes - CSIT Semester 1
 date: 2024-11-27
-updated: 2024-12-11
 description: Study materials and notes compiled for C Programming (CSIT Semester 1).
 tags:
   - CSIT
@@ -87,10 +86,8 @@ This unit covers control structures in C programming, including if-else statemen
 
 ---
 
-<!--
-
-## Unit 6: Strings
-**[Strings](/downloads/CSIT/Sem1/CProgramming/Unit-6.pdf)** explains string manipulation in C, including string operations and functions. You can view the full PDF below:
+## Unit 6: Arrays
+**[Arrays](/downloads/CSIT/Sem1/CProgramming/Unit-6.pdf)** explains how to work with arrays in C programming. You can view the full PDF below:
 
 <iframe 
     src="/downloads/CSIT/Sem1/CProgramming/Unit-6.pdf" 
@@ -99,10 +96,11 @@ This unit covers control structures in C programming, including if-else statemen
 </iframe>
 
 **Description**:  
-This unit covers strings in C, explaining how strings are represented in memory and how to perform common string operations like concatenation, comparison, and finding the length of strings.
+This unit covers arrays in C programming, including how to declare, initialize, and access arrays. It explains one-dimensional and multi-dimensional arrays, as well as array operations like sorting and searching. It also covers strings as arrays of characters.
 
 ---
 
+<!--
 ## Unit 7: Pointers
 **[Pointers](/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf)** explores the concept of pointers, their syntax, and applications in C programming. You can view the full PDF below:
 
