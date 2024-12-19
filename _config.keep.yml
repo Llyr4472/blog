@@ -101,7 +101,7 @@ scroll:
 # ---------------------------------------------------------------------------------------
 home:
   # Website announcement in home page
-  announcement:
+  announcement: false
 
   # Show category in home page post block
   category: true # Option values: true | false
@@ -110,7 +110,7 @@ home:
   tag: true # Option values: true | false
 
   # Set the datetime type of home page post block
-  post_datetime: created # Option values: updated | created
+  post_datetime: updated # Option values: updated | created
 
   post_datetime_format: YYYY-MM-DD
 
@@ -207,8 +207,8 @@ local_search:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/comment.html
 # ---------------------------------------------------------------------------------------
 comment:
-  enable: false # Option values: true | false
-  use: valine # Option values: valine | gitalk | twikoo | waline | giscus | artalk | disqus
+  enable: true # Option values: true | false
+  use: giscus # Option values: valine | gitalk | twikoo | waline | giscus | artalk | disqus
 
   # Valine
   # See: https://github.com/xCss/Valine
@@ -251,11 +251,11 @@ comment:
   #      https://giscus.app
   # Please generate your configuration items in https://giscus.app
   giscus:
-    repo:
-    repo_id:
-    category: Announcements # Recommend use Announcements
-    category_id:
-    reactions_enabled: false # Option values: true | false
+    repo: llyr4472/csit101
+    repo_id: R_kgDONfyN6g
+    category: General # Recommend use Announcements
+    category_id: DIC_kwDONfyN6s4ClXO2
+    reactions_enabled: true # Option values: true | false
 
   # Artalk
   # See: https://github.com/ArtalkJS/Artalk
@@ -286,7 +286,7 @@ lazyload:
 # Docs: https://keep-docs.xpoet.cn/basis/configuration-guide/cdn.html
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: false # Option values: true | false
+  enable: true # Option values: true | false
   provider: cdnjs # Option values: cdnjs | jsdelivr | unpkg
 
 # ---------------------------------------------------------------------------------------
