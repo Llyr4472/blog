@@ -1,7 +1,6 @@
 ---
 title: IIT Notes - CSIT Semester 1
-date: 2024-12-
-updated: 2024-12-11
+date: 2024-12-11
 description: Study materials and notes compiled by SKM for Introduction to Information Technology.
 tags:
   - IIT

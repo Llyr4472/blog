@@ -1,5 +1,5 @@
 ---
-title: "RISC vs CISC : IIT Sem1 Assignment"
+title: "RISC vs CISC : IIT Sem1 Assignment 1"
 date: "2024-11-28"
 description: Detailed comparison of RISC and CISC architectures
 tags:

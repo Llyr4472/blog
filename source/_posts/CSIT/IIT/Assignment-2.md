@@ -1,5 +1,5 @@
 ---
-title: "IIT Assignment 2"
+title: "IIT Sem-1 Assignment 2"
 date: "2024-12-11"
 description: "Questions for Assignment 2 on Computer Fundamentals, Memory Hierarchy, Operating Systems, and IoT"
 tags:
