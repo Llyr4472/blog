@@ -76,7 +76,7 @@ This unit covers all major input and output devices used in computers, including
 [Input and Output Devices](/downloads/CSIT/Sem1/IIT/Unit-6.pdf) introduces the different types of software that make computers functional. You can view the full PDF below:
 
 <iframe 
-    src="/dowwnloads/CSIT/Sem1/IIT/Unit-6.pdf" 
+    src="/downloads/CSIT/Sem1/IIT/Unit-6.pdf" 
     width="100%" 
     height="600px">
 </iframe>
@@ -127,13 +127,14 @@ This unit explains how data is transmitted over communication channels and how n
 **Description**:  
 In this unit, we explore the working of the internet, web technologies, and internet services like email, VoIP, and cloud computing. It also covers concepts such as IP addresses, DNS, and HTTP.
 
+--->
 ---
 
 ## Unit 9: Fundamentals of Databases
 **Unit 9: Fundamentals of Databases** introduces the concepts of database management systems. You can view the full PDF below:
 
 <iframe 
-    src="Unit-9.pdf" 
+    src="/downloads/CSIT/Sem1/IIT/Unit-9.pdf" 
     width="100%" 
     height="600px">
 </iframe>
@@ -141,6 +142,7 @@ In this unit, we explore the working of the internet, web technologies, and inte
 **Description**:  
 This unit covers the basics of database systems, including relational databases, SQL, and data models. It explains how databases are used to store, manage, and retrieve data efficiently.
 
+<!---
 ---
 
 ## Unit 10: Multimedia
