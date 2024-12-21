@@ -61,6 +61,33 @@ This unit covers the basics of Boolean algebra, including its rules and applicat
 ---
 
 ---
+## Unit 3: Combinational Logic Circuits
+### By JPC
+
+<iframe
+  src="/downloads/CSIT/Sem1/Digital-Logic/Unit-3-JPC.pdf"
+  width="100%"
+  height="600px">
+  </iframe>
+
+**Description**:
+This unit explores the concepts of combinational logic circuits, including encoders, decoders, multiplexers, and demultiplexers. It also covers adders, subtractors, code converters, and comparators, providing a comprehensive overview of these essential components in digital systems.
+
+---
+
+---
+## Unit 4: Arithmetic Circuits
+### By JPC
+
+<iframe
+  src="/downloads/CSIT/Sem1/Digital-Logic/Unit-4-JPC.pdf"
+  width="100%"
+  height="600px"></iframe>
+
+**Description**:
+This unit focuses on arithmetic circuits, including half adders, full adders, half subtractors, full subtractors, and BCD adders. It also covers the concepts of carry look-ahead adders, ripple carry adders, and carry save adders, providing a detailed understanding of these essential components in digital systems.
+
+---
 ## Unit-6: Synchronous and Asynchronous Sequential Circuit
 
 Here are the notes for **[Synchronous and Asynchronous Sequential Circuit](/downloads/CSIT/Sem1/Digital-Logic/Unit-6.pdf)**, compiled by **Er. Sachita Nand Mishra**. This unit explores the concepts of synchronous and asynchronous sequential circuits, including their characteristics and applications. You can view the full PDF below:
