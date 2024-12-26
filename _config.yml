@@ -106,6 +106,7 @@ deploy:
   type: git
   repo: https://github.com/Llyr4472/blog
   branch: production
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 # minifier
 all_minifier: true
