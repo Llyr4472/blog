@@ -144,7 +144,10 @@ sitemap:
   category: true
   tag: true
 
-
+robotstxt:
+  useragent: "*"
+  sitemap: sitemap.xml
+  
 
 search:
   path: search.json
