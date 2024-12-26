@@ -105,8 +105,7 @@ theme: keep
 deploy:
   type: git
   repo: https://github.com/Llyr4472/blog
-  branch: production
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  branch: production  
 
 # minifier
 all_minifier: true
@@ -142,6 +141,8 @@ image_minifier:
 
 sitemap:
   path: sitemap.xml
+  category: true
+  tag: true
 
 
 
