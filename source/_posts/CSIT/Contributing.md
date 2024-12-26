@@ -3,8 +3,6 @@ title: Contributing to CSIT101
 date: 2024-12-26
 categories: 
   - External Resources
-tags:
-  - Data Science
 ---
 
 # How to Contribute
