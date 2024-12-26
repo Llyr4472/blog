@@ -14,7 +14,7 @@ There are two simple ways to contribute to this CSIT resource collection:
 ## 1. Send Resources Directly
 
 1. Just send your stuff through:
-   - [Email (prefered)](/contact/)
+   - [Email (prefered)](mailto:contact@prashantgiri360.com.np)
    - Discord (@Llyr4472)
    - WhatsApp
    - Telegram

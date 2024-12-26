@@ -23,7 +23,7 @@ I also recommend that you familiarize yourself with [Obsidian](https://obsidian.
 The button below will redirect you to the site hosting the notes. The website is maintained by the author _(not me)_ .
 
 <div style="text-align: center;">
-  <a href="/dsma" class="button" style="display: inline-block; padding: 15px 30px; font-size: 18px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin: 20px 0;">View DSMA Notes</a>
+  <a href="https://dsma-notes.vercel.app" class="button" style="display: inline-block; padding: 15px 30px; font-size: 18px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin: 20px 0;">View DSMA Notes</a>
 </div>
 
 ---
