@@ -1,6 +1,6 @@
 ---
 title: Data Science Math Resource
-date: 2023-12-26  
+date: 2024-12-26  
 description: A comprehensive note to data science and mathematics  
 tags:  
   - data science  

@@ -1,4 +1,5 @@
 # Redirects of the site
 
 /home / 200
-dsma https://dsma-notes.vercel.app/ 200
+/dsma https://dsma-notes.vercel.app/ 200
+/contact mailto:contact@prashantgiri360.com.np 200
