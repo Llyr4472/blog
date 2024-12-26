@@ -6,7 +6,7 @@ tags:
   - data science  
   - mathematics  
 categories:  
-  - External Resource  
+  - External Resources
 
 ---
 
