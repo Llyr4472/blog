@@ -100,20 +100,21 @@ This unit covers arrays in C programming, including how to declare, initialize, 
 
 ---
 
-<!--
-## Unit 7: Pointers
-**[Pointers](/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf)** explores the concept of pointers, their syntax, and applications in C programming. You can view the full PDF below:
+## Unit 7: Functions
 
-<iframe 
-    src="/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf" 
-    width="100%" 
+**[Functions](/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf)** explains how to use functions in C programming. You can view the full PDF below:
+
+<iframe
+    src="/downloads/CSIT/Sem1/CProgramming/Unit-7.pdf"
+    width="100%"
     height="600px">
+>
 </iframe>
 
-**Description**:  
-This unit explains pointers in C, including how to declare pointers, use pointer arithmetic, and pass pointers to functions. It also covers dynamic memory allocation using `malloc()` and `free()`.
+**Description**:
+This unit covers functions in C programming, including how to declare, define, and call functions. It explains function prototypes, parameters, and return values. It also covers recursion and function pointers. It also covers function pointers and function prototypes.
 
----
+<!--
 
 ## Unit 8: Structures and Unions
 **[Structures and Unions](/downloads/CSIT/Sem1/CProgramming/Unit-8.pdf)** introduces the concept of structures and unions in C programming. You can view the full PDF below:
