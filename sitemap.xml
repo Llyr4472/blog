@@ -2,18 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://csit101.netlify.app/External-Resources/CSIT/Contributing/</loc>
+    <loc>https://csit101.netlify.app/External-Resources/CSIT/Resources/Dsma/</loc>
     
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://csit101.netlify.app/External-Resources/CSIT/Resources/Dsma/</loc>
+    <loc>https://csit101.netlify.app/External-Resources/CSIT/Contributing/</loc>
     
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://csit101.netlify.app/CSIT/Semester-1/CSIT/IIT/Assignment-2/</loc>
+    
+    <lastmod>2024-12-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://csit101.netlify.app/Study-Materials/CSIT/Semester-1/CSIT/C-Programming/Notes/</loc>
+    
+    <lastmod>2024-12-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -30,15 +48,6 @@
   
   <url>
     <loc>https://csit101.netlify.app/CSIT/Semester-1/CSIT/IIT/Notes/</loc>
-    
-    <lastmod>2024-12-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://csit101.netlify.app/Study-Materials/CSIT/Semester-1/CSIT/C-Programming/Notes/</loc>
     
     <lastmod>2024-12-19</lastmod>
     
@@ -102,15 +111,6 @@
   
   <url>
     <loc>https://csit101.netlify.app/CSIT/Semester-1/CSIT/IIT/Assignment1/</loc>
-    
-    <lastmod>2024-12-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://csit101.netlify.app/CSIT/Semester-1/CSIT/IIT/Assignment-2/</loc>
     
     <lastmod>2024-12-19</lastmod>
     
@@ -184,7 +184,7 @@
 
   <url>
     <loc>https://csit101.netlify.app/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -192,119 +192,119 @@
   
   <url>
     <loc>https://csit101.netlify.app/tags/Assignment/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/C-Programming/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Lab/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/CSIT/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Semester-1/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://csit101.netlify.app/tags/C-Programming/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://csit101.netlify.app/tags/Notes/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://csit101.netlify.app/tags/Lab-Experiment/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Digital-Logic/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://csit101.netlify.app/tags/data-science/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://csit101.netlify.app/tags/Notes/</loc>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://csit101.netlify.app/tags/mathematics/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <loc>https://csit101.netlify.app/tags/C-Programming/</loc>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/IIT/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Book/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://csit101.netlify.app/tags/Lab-Experiment/</loc>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Syllabus/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/CSC109/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Model-Question-Paper/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/tags/Slides/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://csit101.netlify.app/tags/data-science/</loc>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://csit101.netlify.app/tags/mathematics/</loc>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -313,70 +313,70 @@
   
   <url>
     <loc>https://csit101.netlify.app/categories/External-Resources/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/CSIT/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/Study-Materials/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/CSIT/Semester-1/</loc>
-    <lastmod>2024-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://csit101.netlify.app/categories/Study-Materials/csit/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/Study-Materials/CSIT/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://csit101.netlify.app/categories/Study-Materials/csit/</loc>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/Study-Materials/CSIT/Semester-1/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/Course-Details/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/Course-Details/CSIT/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://csit101.netlify.app/categories/Course-Details/CSIT/Semester-1/</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2025-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
