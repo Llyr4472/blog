@@ -4,6 +4,23 @@ CSIT 101 is a curated collection of academic resources for CSIT students at Trib
 
 ---
 
+## Deployment Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7e21e3f1-cbf3-4fad-9db6-3c48a3b40105/deploy-status)](https://app.netlify.com/sites/csit101/deploys)
+[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=pmccsit)](https://vercel.com)
+
+
+## Contributors
+[![Contributors](https://contrib.rocks/image?repo=Llyr4472/csit101)](https://github.com/Llyr4472/csit101/graphs/contributors)
+
+
+
+## Contributing
+
+We welcome contributions from everyone!\
+Refer to the [Contributing Guide](source/_posts/CSIT/Contributing.md) for detailed guidelines.
+
+
+
 ## Features
 
 - **Organized Study Materials**: Structured subject-wise notes, assignments, and references.
@@ -22,22 +39,6 @@ This app is built using the following tools and technologies:
 
 
 
-## Deployment Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7e21e3f1-cbf3-4fad-9db6-3c48a3b40105/deploy-status)](https://app.netlify.com/sites/csit101/deploys)
-[![Vercel Status](https://therealsujitk-vercel-badge.vercel.app/?app=pmccsit)](https://vercel.com)
-
-
-## Contributors
-[![Contributors](https://contrib.rocks/image?repo=Llyr4472/csit101)](https://github.com/Llyr4472/csit101/graphs/contributors)
-
-
-
-## Contributing
-
-We welcome contributions from everyone!\
-Refer to the [Contributing Guide](source/_posts/CSIT/Contributing.md) for detailed guidelines.
-
----
 
 ## Local Development
 
