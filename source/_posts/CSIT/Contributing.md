@@ -23,13 +23,38 @@ There are two simple ways to contribute to this CSIT resource collection:
    - Any files pictures/pdfs
    - About the author (usernames)
 
-## 2. Using Git (For Those Who Know Git)
+## 2. Using Git (For Advanced Users)
 
-If you're familiar with Git and want to contribute directly:
-1. Just let me know and I'll give you access
-2. Then you can commit directly to the repo
-3. Its just md files.
+1. Fork the repository from [GitHub](https://github.com/llyr4472/csit101)
 
+2. Clone your forked repository:
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/csit101.git
+   ```
+
+3. Create a new branch:
+
+   ```bash
+   git checkout -b add-new-resource
+   ```
+
+4. Add your changes and commit:
+   
+   ``` bash
+   git add .
+   git commit -m "Add: description of your contribution"
+   ```
+
+5. Push to your fork:
+
+   ```bash
+   git push origin add-new-resource
+   ```
+
+6. Create a Pull Request from your fork to the main repository
+
+**Note:** Make sure to follow the existing file structure and formatting guidelines.
 
 Also you can just comment here if you want and I will guide you through the process.
 
