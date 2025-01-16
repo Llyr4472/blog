@@ -33,26 +33,20 @@ There are two simple ways to contribute to this CSIT resource collection:
    git clone https://github.com/YOUR-USERNAME/csit101.git
    ```
 
-3. Create a new branch:
-
-   ```bash
-   git checkout -b add-new-resource
-   ```
-
-4. Add your changes and commit:
+3. Add your changes and commit:
    
    ``` bash
    git add .
    git commit -m "Add: description of your contribution"
    ```
 
-5. Push to your fork:
+4. Push to your fork:
 
    ```bash
    git push origin add-new-resource
    ```
 
-6. Create a Pull Request from your fork to the main repository
+5. Create a Pull Request from your fork to the main repository
 
 **Note:** Make sure to follow the existing file structure and formatting guidelines.
 
