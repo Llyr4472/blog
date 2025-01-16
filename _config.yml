@@ -105,7 +105,7 @@ theme: keep
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/Llyr4472/blog
+  repo: https://github.com/Llyr4472/csit101
   branch: production  
 
 # minifier
