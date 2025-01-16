@@ -252,9 +252,9 @@ comment:
   # Please generate your configuration items in https://giscus.app
   giscus:
     repo: llyr4472/csit101
-    repo_id: R_kgDONfyN6g
+    repo_id: R_kgDONUqKxg
     category: General # Recommend use Announcements
-    category_id: DIC_kwDONfyN6s4ClXO2
+    category_id: DIC_kwDONUqKxs4CmDuh
     reactions_enabled: true # Option values: true | false
 
   # Artalk
