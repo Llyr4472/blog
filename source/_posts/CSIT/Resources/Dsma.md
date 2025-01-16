@@ -33,7 +33,7 @@ The button below will redirect you to the site hosting the notes. The website is
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
   <img src="https://github.com/Jamsjz.png" alt="Author Avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px;">
   <div>
-      <h4 style="margin: 0;">Bhaskar Poudyal (@jamjz)</h4>
+      <h4 style="margin: 0;">Bhaskar Poudyal (@jamsjz)</h4>
       <p style="margin: 5px 0;">Student at Kathmandu University</p>
       <p style="margin: 5px 0;">Computer Science Major with a focus on Data Science and Machine Learning</p>
       <div style="display: flex; gap: 10px;">
